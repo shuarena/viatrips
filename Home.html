@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/Home.css" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidebarMobile").style.width = "265px";
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("sidebarMobile").style.width = "0";
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container"
+    >
+      <div class="container">
+        <span
+          class="icon-menu navbar-toggle-icon d-md-none"
+          onclick="openNav()"
+        ></span>
+        <a class="navbar-brand navbar-brand-container" href="Home.html"
+          ><img src="imgs/logo-viatrips.svg" class="navbar-logo"
+        /></a>
+        <div class="d-none d-md-block mx-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Planning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Trip</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav ml-auto ml-md-0">
+          <div class="d-flex justify-content-center">
+            <a class="nav-link" href="#"
+              ><span class="icon-favorite navbar-icon"></span
+            ></a>
+            <a class="nav-link" href="Login.html"
+              ><span class="icon-user navbar-icon"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="overlay" onclick="closeNav()"></div>
+    <div class="sidebar" id="sidebarMobile">
+      <div class="sidebar-content">
+        <div>
+          <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"
+            ><span class="icon-menu-open"></span
+          ></a>
+          <a href="javascript:void(0)" onclick="closeNav()"
+          ><span class="icon-home sidebar-icon"></span>Home</a
+        >
+          <a href="javascript:void(0)" onclick="closeNav()"
+            ><span class="icon-tour sidebar-icon"></span>Tour</a
+          >
+          <a href="javascript:void(0)" onclick="closeNav()"
+            ><span class="icon-shopping-list sidebar-icon"></span>Planning</a
+          >
+          <a href="javascript:void(0)" onclick="closeNav()"
+            ><span class="icon-ticket sidebar-icon"></span>My Trip</a
+          >
+          <a href="javascript:void(0)" onclick="closeNav()"
+            ><span class="icon-blog sidebar-icon"></span>Blogs</a
+          >
+        </div>
+        <a href="Login.html" class="btn btn-outline-primary primary-button d-flex w-100 signin-btn">
+          <span class="icon-login signin-icon"></span>
+          Sign in</a>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner1-home">
+      <div class="container">
+        <div class="search-box">
+          <div class="d-flex">
+            <!-- Tab bar -->
+            <ul class="nav tabs-container">
+              <li class="nav-item">
+                <a data-toggle="tab" class="tab-item active" href="#hotel"
+                  ><span class="icon-bed tab-icon"></span>Hotel</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-toggle="tab" class="tab-item" href="#flights"
+                  ><span class="icon-plane tab-icon"></span>Flights</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-toggle="tab" class="tab-item" href="#attractions"
+                  ><span class="icon-attractions tab-icon"></span>Attractions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content p-2 p-lg-0">
+            <!-- Tab 1 -->
+            <div class="tab-pane p-2 active" id="hotel" role="tabpanel">
+              <div class="container-fluid p-0">
+                <div class="row align-items-center m-0">
+                  <div class="col-12 col-lg-3 p-0 px-lg-2">
+                    <div class="select-container">
+                      <span class="icon-location select-left-icon"></span>Where
+                      are you going?
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0 px-lg-2">
+                    <div class="select-container">
+                      <span class="icon-calendar select-left-icon"></span
+                      >Check-in &nbsp; • &nbsp; Check-out
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4 p-0 px-lg-2">
+                    <div class="select-container">
+                      <div class="d-flex align-items-center">
+                        <span class="icon-group-user select-left-icon"></span>2
+                        adults &nbsp;• &nbsp; 0 children &nbsp;•&nbsp; 1 room
+                      </div>
+                      <span
+                        class="icon-arrowline-down select-right-icon ml-auto"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 p-0 px-lg-2 mt-2 mt-lg-0">
+                    <a href="#" class="search-button">
+                      Search <span class="icon-Search"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="tab-pane p-2" id="flights" role="tabpanel">
+              <div class="container-fluid p-0">
+                <div class="row align-items-center m-0">
+                  <div class="col-12 col-lg-5 p-0 px-lg-2">
+                    <div
+                      class="d-flex-column d-lg-flex align-items-start align-items-lg-center justify-content-center justify-content-lg-start"
+                    >
+                      <div class="select-container flex-fill">
+                        <span class="icon-location select-left-icon"></span
+                        >From?
+                      </div>
+                      <div class="d-none d-lg-block">
+                        <span class="icon-change p-2"></span>
+                      </div>
+                      <div class="select-container flex-fill">
+                        <span class="icon-location select-left-icon"></span>To?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 p-0 px-lg-2">
+                    <div class="select-container">
+                      <span class="icon-calendar select-left-icon"></span>Depart
+                      &nbsp; • &nbsp; Return
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 p-0 px-lg-2">
+                    <div class="select-container">
+                      <div class="d-flex align-items-center">
+                        <span class="icon-group-user select-left-icon"></span>1
+                        Passenger
+                      </div>
+                      <span
+                        class="icon-arrowline-down select-right-icon ml-auto"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 p-0 px-lg-2 mt-2 mt-lg-0">
+                    <a href="#" class="search-button">
+                      Search <span class="icon-Search"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="tab-pane p-2" id="attractions" role="tabpanel">
+              <div class="container-fluid p-0">
+                <div class="row align-items-center m-0">
+                  <div class="col-12 col-lg-5 p-0 px-lg-2">
+                    <div class="select-container">
+                      <span class="icon-location select-left-icon"></span>
+                      <span class="inputsearch-home">Where are you going?</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-5 p-0 px-lg-2">
+                    <div class="select-container">
+                      <span class="icon-calendar select-left-icon"></span>
+                      <span class="inputsearch-home">Select your dates</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-2 p-0 px-lg-2 mt-2 mt-lg-0">
+                    <a href="#" class="search-button">
+                      Search <span class="icon-Search"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hot Tours -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Hot Tours</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <!-- product card 1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="product-container">
+            <div class="product-image">
+              <img src="imgs/product-1.jpg" />
+              <div class="favorite"><span class="icon-favorite"></span></div>
+              <div class="day-duration">1 day left</div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+                An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+              </div>
+              <div class="review-star">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="tour-code">
+                <span class="tour-code-title">Tour code:</span>
+                NDSGN3021123VN-Vt
+              </div>
+              <div class="departure">
+                <span class="departure-title">Departure place:</span>
+                Ho Chi Minh City
+              </div>
+              <div class="product-price">206.48$</div>
+            </div>
+            <div class="d-flex actions-container">
+              <a href="#" class="flex-fill other-days"> View detail </a>
+              <a href="#" class="flex-fill book-now"> Book now </a>
+            </div>
+            <div class="d-flex compare-container align-items-center">
+              <span class="icon-plus-circle" id="addtocompare-icon"></span> Add to compare
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-sm-block">
+          <div class="product-container">
+            <div class="product-image">
+              <img src="imgs/product-1.jpg" />
+              <div class="favorite"><span class="icon-favorite"></span></div>
+              <div class="day-duration">1 day left</div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+                An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+              </div>
+              <div class="review-star">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="tour-code">
+                <span class="tour-code-title">Tour code:</span>
+                NDSGN3021123VN-Vt
+              </div>
+              <div class="departure">
+                <span class="departure-title">Departure place:</span>
+                Ho Chi Minh City
+              </div>
+              <div class="product-price">206.48$</div>
+            </div>
+            <div class="d-flex actions-container">
+              <a href="#" class="flex-fill other-days"> View detail </a>
+              <a href="#" class="flex-fill book-now"> Book now </a>
+            </div>
+            <div class="d-flex compare-container align-items-center">
+              <span class="icon-plus-circle" id="addtocompare-icon"></span> Add to compare
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12  d-none d-lg-block">
+          <div class="product-container">
+            <div class="product-image">
+              <img src="imgs/product-1.jpg" />
+              <div class="favorite"><span class="icon-favorite"></span></div>
+              <div class="day-duration">1 day left</div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+                An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+              </div>
+              <div class="review-star">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="tour-code">
+                <span class="tour-code-title">Tour code:</span>
+                NDSGN3021123VN-Vt
+              </div>
+              <div class="departure">
+                <span class="departure-title">Departure place:</span>
+                Ho Chi Minh City
+              </div>
+              <div class="product-price">206.48$</div>
+            </div>
+            <div class="d-flex actions-container">
+              <a href="#" class="flex-fill other-days"> View detail </a>
+              <a href="#" class="flex-fill book-now"> Book now </a>
+            </div>
+            <div class="d-flex compare-container align-items-center">
+              <span class="icon-plus-circle" id="addtocompare-icon"></span> Add to compare
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-all d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-outline-primary primary-button d-flex"
+        >
+          Show all
+          <span class="icon-arrowline-right show-all-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container banner2-home">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="imgs/banner2.1-home.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="imgs/banner2.2-home.png"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="imgs/banner2.3-home.png"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="icon-arrowline-left" id="carousel-btn"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="icon-arrowline-right" id="carousel-btn"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Last Deals -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Last Deals</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <!-- product card 2 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="product-container">
+            <div class="product-image">
+              <img src="imgs/product-1.jpg" />
+              <div class="favorite"><span class="icon-favorite"></span></div>
+              <div class="day-duration">1 day left</div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+                An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+              </div>
+              <div class="review-star">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="tour-code">
+                <span class="tour-code-title">Tour code:</span>
+                NDSGN3021123VN-Vt
+              </div>
+              <div class="departure">
+                <span class="departure-title">Departure place:</span>
+                Ho Chi Minh City
+              </div>
+              <div class="product-price">206.48$</div>
+            </div>
+            <div class="d-flex actions-container">
+              <a href="#" class="flex-fill other-days"> View detail </a>
+              <a href="#" class="flex-fill book-now"> Book now </a>
+            </div>
+            <div class="d-flex compare-container align-items-center">
+              <span class="icon-plus-circle" id="addtocompare-icon"></span> Add to compare
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-sm-block">
+          <div class="product-container">
+            <div class="product-image">
+              <img src="imgs/product-1.jpg" />
+              <div class="favorite"><span class="icon-favorite"></span></div>
+              <div class="day-duration">1 day left</div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+                An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+              </div>
+              <div class="review-star">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="tour-code">
+                <span class="tour-code-title">Tour code:</span>
+                NDSGN3021123VN-Vt
+              </div>
+              <div class="departure">
+                <span class="departure-title">Departure place:</span>
+                Ho Chi Minh City
+              </div>
+              <div class="product-price">206.48$</div>
+            </div>
+            <div class="d-flex actions-container">
+              <a href="#" class="flex-fill other-days"> View detail </a>
+              <a href="#" class="flex-fill book-now"> Book now </a>
+            </div>
+            <div class="d-flex compare-container align-items-center">
+              <span class="icon-plus-circle" id="addtocompare-icon"></span> Add to compare
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12  d-none d-lg-block">
+          <div class="product-container">
+            <div class="product-image">
+              <img src="imgs/product-1.jpg" />
+              <div class="favorite"><span class="icon-favorite"></span></div>
+              <div class="day-duration">1 day left</div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">
+                Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+                An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+              </div>
+              <div class="review-star">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <div class="tour-code">
+                <span class="tour-code-title">Tour code:</span>
+                NDSGN3021123VN-Vt
+              </div>
+              <div class="departure">
+                <span class="departure-title">Departure place:</span>
+                Ho Chi Minh City
+              </div>
+              <div class="product-price">206.48$</div>
+            </div>
+            <div class="d-flex actions-container">
+              <a href="#" class="flex-fill other-days"> View detail </a>
+              <a href="#" class="flex-fill book-now"> Book now </a>
+            </div>
+            <div class="d-flex compare-container align-items-center">
+              <span class="icon-plus-circle" id="addtocompare-icon"></span> Add to compare
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-all d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-outline-primary primary-button d-flex"
+        >
+          Show all
+          <span class="icon-arrowline-right show-all-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <!-- Big Deals -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Big Deals</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <!-- product card 3 -->
+    <div class="container">
+      <div class="col-12">
+        <div class="big-deals-container">Product 1</div>
+      </div>
+      <div class="col-12 mt-2">
+        <div class="big-deals-container">Product 2</div>
+      </div>
+      <div class="col-12 mt-2">
+        <div class="big-deals-container">Product 3</div>
+      </div>
+      <div class="show-all mt-4 d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-outline-primary primary-button d-flex"
+        >
+          Show all
+          <span class="icon-arrowline-right show-all-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Trending destinations -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Trending destinations</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <!-- product card 4 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="destination-container">
+            <img class="img-fluid"
+              src="imgs/trendingdestinations1.png"
+              class="destination-image"
+            />
+
+            <div class="destination-content">
+              <h3>Phu Quoc</h3>
+              <span>There used to be 7,3 million people here in 2023.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+          <div class="destination-container">
+            <img class="img-fluid"
+              src="imgs/trendingdestinations2.png"
+              class="destination-image"
+            />
+
+            <div class="destination-content">
+              <h3>Da Nang</h3>
+              <span>There used to be 5,8 million people here in 2023.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-6 col-sm-4">
+          <div class="destination-container">
+            <img class="img-fluid"
+              src="imgs/trendingdestinations3.png"
+              class="destination-image"
+            />
+
+            <div class="destination-content">
+              <h3>Da Lat</h3>
+              <span class="d-none d-xl-block">4 million people have come here in 2023.</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4">
+          <div class="destination-container">
+            <img class="img-fluid"
+              src="imgs/trendingdestinations4.png"
+              class="destination-image"
+            />
+            <div class="destination-overlay"></div>
+            <div class="destination-content">
+              <h3>Hoi An</h3>
+              <span class="d-none d-xl-block">2,5 million people have come here in 2023.</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-sm-4">
+          <div class="destination-container">
+            <img class="img-fluid"
+              src="imgs/trendingdestinations5.png"
+              class="destination-image"
+            />
+            <div class="destination-overlay"></div>
+            <div class="destination-content">
+              <h3>Nha Trang</h3>
+              <span class="d-none d-xl-block">1,67 million people have come here in 2023.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick and easy trip planner -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Quick and easy trip planner</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <div class="container trip-planner">
+      <div class="d-flex justify-content-center">
+        <!-- Tab bar -->
+        <ul class="nav tabs-container">
+          <li class="nav-item">
+            <a data-toggle="tab" class="tab-item active" href="#beach"
+              ><span class="icon-beach tab-icon"></span>Beach</a
+            >
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" class="tab-item" href="#camping"
+              ><span class="icon-camping tab-icon"></span>Camping</a
+            >
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" class="tab-item" href="#city"
+              ><span class="icon-city tab-icon"></span>City</a
+            >
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" class="tab-item" href="#romance"
+              ><span class="icon-favorite tab-icon"></span>Romance</a
+            >
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" class="tab-item" href="#relax"
+              ><span class="icon-relax tab-icon"></span>Relax</a
+            >
+          </li>
+          <li class="nav-item">
+            <a data-toggle="tab" class="tab-item" href="#foodtour"
+              ><span class="icon-food tab-icon"></span>Foodtoor</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content mt-2">
+        <div class="tab-pane active" id="beach" role="tabpanel">
+          <div
+            id="tripPlannerBeach"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach1.png"
+                        class="image-full"
+                      />
+                      <h3>Ha Long Bay</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach2.png"
+                        class="image-full"
+                      />
+                      <h3>Nha Trang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach3.png"
+                        class="image-full"
+                      />
+                      <h3>Da Nang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach4.png"
+                        class="image-full"
+                      />
+                      <h3>Phu Quoc</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach5.png"
+                        class="image-full"
+                      />
+                      <h3>Do Son</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach6.png"
+                        class="image-full"
+                      />
+                      <h3>Cat Ba island</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach7.png"
+                        class="image-full"
+                      />
+                      <h3>Cu Lao Cham</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-beach8.png"
+                        class="image-full"
+                      />
+                      <h3>Mui Ne</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev carousel-control"
+              href="#tripPlannerBeach"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="icon-angle-left carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next carousel-control"
+              href="#tripPlannerBeach"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="icon-angle-right carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane" id="camping" role="tabpanel">
+          <div
+            id="tripPlannerCamping"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping1.png"
+                        class="image-full"
+                      />
+                      <h3>Ba Den mountain</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping2.png"
+                        class="image-full"
+                      />
+                      <h3>Tri An lake</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping3.png"
+                        class="image-full"
+                      />
+                      <h3>Cao Minh</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping4.png"
+                        class="image-full"
+                      />
+                      <h3>Zenna Pool Camp</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping5.png"
+                        class="image-full"
+                      />
+                      <h3>Phuong Nam beach</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping6.png"
+                        class="image-full"
+                      />
+                      <h3>Ho Coc beach</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping7.png"
+                        class="image-full"
+                      />
+                      <h3>Hodota Resort</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-camping8.png"
+                        class="image-full"
+                      />
+                      <h3>Vung Tau Paradise</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev carousel-control"
+              href="#tripPlannerCamping"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="icon-angle-left carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next carousel-control"
+              href="#tripPlannerCamping"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="icon-angle-right carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane" id="city" role="tabpanel">
+          <div id="tripPlannerCity" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city1.png"
+                        class="image-full"
+                      />
+                      <h3>ha Noi</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city2.png"
+                        class="image-full"
+                      />
+                      <h3>Da Nang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city3.png"
+                        class="image-full"
+                      />
+                      <h3>Hoi An</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city4.png"
+                        class="image-full"
+                      />
+                      <h3>Ninh Binh</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city5.png"
+                        class="image-full"
+                      />
+                      <h3>Ho Chi Minh</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city6.png"
+                        class="image-full"
+                      />
+                      <h3>Nha Trang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city7.png"
+                        class="image-full"
+                      />
+                      <h3>Hue</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-city8.png"
+                        class="image-f"
+                      />
+                      <h3>Da Lat</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev carousel-control"
+              href="#tripPlannerCity"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="icon-angle-left carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next carousel-control"
+              href="#tripPlannerCity"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="icon-angle-right carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane" id="romance" role="tabpanel">
+          <div
+            id="tripPlannerRomance"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance1.png"
+                        class="image-full"
+                      />
+                      <h3>Sapa</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance2.png"
+                        class="image-full"
+                      />
+                      <h3>Ha Long Bay</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance3.png"
+                        class="image-full"
+                      />
+                      <h3>Ho Tay - Ha Noi</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance4.png"
+                        class="image-full"
+                      />
+                      <h3>Ngu Binh - Hue</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance5.png"
+                        class="image-full"
+                      />
+                      <h3>Quy Nhon beach</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance6.png"
+                        class="image-full"
+                      />
+                      <h3>Mui Ne</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance7.png"
+                        class="image-full"
+                      />
+                      <h3>Valley of Love Da Lat</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-romance8.png"
+                        class="image-full"
+                      />
+                      <h3>Con Dao</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev carousel-control"
+              href="#tripPlannerRomance"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="icon-angle-left carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next carousel-control"
+              href="#tripPlannerRomance"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="icon-angle-right carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane" id="relax" role="tabpanel">
+          <div
+            id="tripPlannerRelax"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax1.png"
+                        class="image-full"
+                      />
+                      <h3>MELIA Ba Vi</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax2.png"
+                        class="image-full"
+                      />
+                      <h3>Legacy Yen Tu</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax3.png"
+                        class="image-full"
+                      />
+                      <h3>Binh Chau</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax4.png"
+                        class="image-full"
+                      />
+                      <h3>Six Senses Con Dao</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax5.png"
+                        class="image-full"
+                      />
+                      <h3>Yoko Onsen Quang Hanh</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax6.png"
+                        class="image-full"
+                      />
+                      <h3>Mikazuki Da Nang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax7.png"
+                        class="image-full"
+                      />
+                      <h3>Thap Ba Nha Trang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-relax8.png"
+                        class="image-full"
+                      />
+                      <h3>Than Tai mountain</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev carousel-control"
+              href="#tripPlannerRelax"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="icon-angle-left carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next carousel-control"
+              href="#tripPlannerRelax"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="icon-angle-right carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane" id="foodtour" role="tabpanel">
+          <div
+            id="tripPlannerFoodTour"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour1.png"
+                        class="image-full"
+                      />
+                      <h3>Ha Noi Street Food</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour2.png"
+                        class="image-full"
+                      />
+                      <h3>Ho Chi Minh Street Food</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour3.png"
+                        class="image-full"
+                      />
+                      <h3>Hoi An</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour4.png"
+                        class="image-full"
+                      />
+                      <h3>Hue</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour5.png"
+                        class="image-full"
+                      />
+                      <h3>Sai Gon River</h3>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour6.png"
+                        class="image-full"
+                      />
+                      <h3>Da Nang</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-sm-block col-sm-4 col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour7.png"
+                        class="image-full"
+                      />
+                      <h3>Da Lat</h3>
+                    </div>
+                  </div>
+                  <div class="d-none d-lg-block col-lg-3">
+                    <div class="trip-planner-item">
+                      <img
+                        src="imgs/tripplanner-foodtour8.png"
+                        class="image-full"
+                      />
+                      <h3>Local Food Ha Noi</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev carousel-control"
+              href="#tripPlannerFoodTour"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="icon-angle-left carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              class="carousel-control-next carousel-control"
+              href="#tripPlannerFoodTour"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="icon-angle-right carousel-control-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get inspiration for your next trip -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Get inspiration for your next trip</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <!-- product card 5 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-12">
+          <div class="inspiration-container">
+            <img class="img-fluid"
+             src="imgs/inspiration1.png" class="inspiration-image" />
+
+            <div class="inspiration-content">
+              <h3>Conquer Sapa during the snowfall season.</h3>
+              <span class="d-none d-md-block"
+                >Touch the milestone at 3,143 meters and admire the stunning scenery on the Roof of Indochina.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-sm-block col-xl-3 col-lg-3 col-md-4 col-sm-4">
+          <div class="inspiration-container">
+            <img class="img-fluid"
+            src="imgs/inspiration2.png" class="inspiration-image" />
+
+            <div class="inspiration-content">
+              <h3>
+                Top 7 magnificent natural locations.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block col-md-3">
+          <div class="inspiration-container">
+            <img class="img-fluid"
+            src="imgs/inspiration3.png" class="inspiration-image" />
+
+            <div class="inspiration-content">
+              <h3>
+                Top 10 destinations you must visit during the Tet holiday
+                2024.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-all d-flex justify-content-center">
+        <button
+          type="button"
+          class="btn btn-outline-primary primary-button d-flex"
+        >
+          Show all
+          <span class="icon-arrowline-right show-all-icon"></span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Why choose Viatrips? -->
+    <div class="container title-container">
+      <div class="d-flex title-index">
+        <h2>Why choose Viatrips?</h2>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="feature-container">
+            <img src="imgs/service-home1.png" class="feature-image" />
+            <h3 class="feature-title">Tour Sales Network</h3>
+            <div class="feature-description d-none d-md-block">
+              Using the latest technology
+            </div>
+            <div class="feature-description d-none d-md-block">
+              Stay updated with the latest travel trends
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-container">
+            <img src="imgs/service-home2.png" class="feature-image" />
+            <h3 class="feature-title">Products & Services</h3>
+            <div class="feature-description d-none d-md-block">
+              Diverse – Quality – Safe
+            </div>
+            <div class="feature-description d-none d-md-block">
+              Feedbacks and reviews from customers
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-container">
+            <img src="imgs/service-home3.png" class="feature-image" />
+            <h3 class="feature-title">Pricing</h3>
+            <div class="feature-description d-none d-md-block">
+              Always the best price
+            </div>
+            <div class="feature-description d-none d-md-block">
+              Exciting promotional program
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4">
+          <div class="feature-container">
+            <img src="imgs/service-home4.png" class="feature-image" />
+            <h3 class="feature-title">Planning</h3>
+            <div class="feature-description d-none d-md-block">
+              Make your trip no longer boring
+            </div>
+            <div class="feature-description d-none d-md-block">
+              Continuous schedule reminder system
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-container">
+            <img src="imgs/service-home5.png" class="feature-image" />
+            <h3 class="feature-title">Payment</h3>
+            <div class="feature-description d-none d-md-block">
+              Safe & secure
+            </div>
+            <div class="feature-description d-none d-md-block">
+              Fast and convenient group payment
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="feature-container">
+            <img src="imgs/service-home6.png" class="feature-image" />
+            <h3 class="feature-title">Support</h3>
+            <div class="feature-description d-none d-md-block">
+              Hotline & online (08h00 - 22h00)
+            </div>
+            <div class="feature-description d-none d-md-block">
+              Staff support through chatbox 24/7
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback's Customers -->
+    <div class="container feedback-home">
+      <div class="row align-items-center">
+        <div class="col-3">
+          <h4>Feedback's Customers</h4>
+          <span>"What do customers say about us?"</span>
+          <button
+            type="button"
+            class="btn button-borderless d-flex mt-2">Show more<span class="icon-arrowline-right borderless-icon d-none d-md-block"></span></button>
+            
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9 col-9">
+          <div class="feadback-container">
+            <img src="imgs/feedback-home1.png" class="image-full" />
+            <div class="feedback-content">
+              We are very impressed with how this website helps us share and pay
+              bills.
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3">
+          <div class="feadback-container feedback-2 d-none d-md-block">
+            <img src="imgs/feedback-home2.png" class="image-full" />
+            <div class="feedback-content d-none d-lg-block">
+              The experience of booking is really convenient.
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-block col-lg-2">
+          <div class="feadback-container feedback-3">
+            <img src="imgs/feedback-home3.png" class="image-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="d-none d-md-block container-fluid p-0 gallery-home">
+      <div class="row align-items-end">
+        <div class="col-4">
+          <div class="gallery-container gallery-item-1">
+            <img src="imgs/gallery-home1.png" class="image-full" />
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="gallery-container gallery-item-2">
+            <img src="imgs/gallery-home2.png" class="image-full" />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="gallery-container gallery-item-3">
+            <img src="imgs/gallery-home3.png" class="image-full" />
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="gallery-container gallery-item-4">
+            <img src="imgs/gallery-home4.png" class="image-full" />
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-2">
+          <div class="gallery-container gallery-item-5">
+            <img src="imgs/gallery-home5.png" class="image-full" />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="gallery-container gallery-item-6">
+            <img src="imgs/gallery-home6.png" class="image-full" />
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="gallery-container gallery-item-7">
+            <img src="imgs/gallery-home7.png" class="image-full" />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="gallery-container gallery-item-8">
+            <img src="imgs/gallery-home8.png" class="image-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="d-md-none">
+      <div id="footerCollapse">
+        <div class="card">
+          <div class="card-header" id="AboutViatrips">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
+              aria-expanded="true" aria-controls="aboutViatrips">
+              About Viatrips
+            </button>
+          </div>
+
+          <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Carrers</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingExplore">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
+              aria-controls="explore">
+              Explore
+            </button>
+          </div>
+          <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Airplane ticket</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Group booking</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInformation">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
+              aria-controls="information">
+              Information
+            </button>
+          </div>
+          <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Tour booking policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">About Viatrips</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Airplane ticket</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Group booking</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Tour booking policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section ">
+          <h4 class="footer-title">Social media</h4>
+          <div class="d-flex">
+            <a href="#"><span class="icon-facebook social-icon"></span></a>
+            <a href="#"><span class="icon-instagram social-icon"></span></a>
+            <a href="#"><span class="icon-youtube social-icon"></span></a>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="icon-discord social-icon"></span></a>
+            <a href="#"><span class="icon-tiktok social-icon"></span></a>
+            <a href="#"><span class="icon-twitter social-icon"></span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-5 d-block d-md-none social-section ">
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-facebook social-icon"></span></a>
+                <a href="#"><span class="icon-instagram social-icon"></span></a>
+                <a href="#"><span class="icon-youtube social-icon"></span></a>
+              </div>
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-discord social-icon"></span></a>
+                <a href="#"><span class="icon-tiktok social-icon"></span></a>
+                <a href="#"><span class="icon-twitter social-icon"></span></a>
+              </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-12 ">
+              <h4 class="footer-title">Payment</h4>
+              <div class="d-flex flex-wrap">
+                <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 ">
+              <div class="input-group email-address">
+                <input placeholder="Enter Email Address" class="form-control email-input" />
+                <span class="input-group-append right-icon-container">
+                  <button class="btn border-0 text-white send-btn" type="button">
+                    <span class="icon-send send-icon"></span>
+                  </button>
+                </span>
+              </div>
+              <div class="receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <span class="checkmark"></span>
+                Yes, i want to receive news and products emails. Please read our
+                <a href="#">privacy policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright text-center">
+      Copyright © 2023 Viatrips. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer -->
+
+
+  </body>
+</html>

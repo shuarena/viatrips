@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Group booking</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- link css -->
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/icons.css" />
+  <link rel="stylesheet" href="css/groupbooking.css" />
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.11/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebarMobile").style.width = "265px";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebarMobile").style.width = "0";
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
+  <script>
+    // https://www.w3schools.com/howto/howto_js_countdown.asp
+    // Set the date we're counting down to
+    var addHours = 2 * 60 * 60 * 1000;
+    var countDownDate = new Date().getTime() + addHours;
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for hours, minutes and seconds
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      if (hours < 10) {
+        hours = "0" + hours;
+      }
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      if (minutes < 10) {
+        minutes = "0" + minutes;
+      }
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      if (seconds < 10) {
+        seconds = "0" + seconds;
+      }
+      // Display the result in the element with id="demo"
+      document.getElementById("clock").innerHTML =
+        hours + " : " + minutes + " : " + seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+      }
+    }, 1000);
+  </script>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav
+   class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container"
+ >
+   <div class="container">
+     <span
+       class="icon-menu navbar-toggle-icon d-md-none"
+       onclick="openNav()"
+     ></span>
+     <a class="navbar-brand navbar-brand-container" href="Home.html"
+       ><img src="imgs/logo-viatrips.svg" class="navbar-logo"
+     /></a>
+     <div class="d-none d-md-block mx-auto">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" href="#">Tour</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Planning</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">My Trip</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Blogs</a>
+         </li>
+       </ul>
+     </div>
+     <div class="navbar-nav ml-auto ml-md-0">
+       <div class="d-flex justify-content-center">
+         <a class="nav-link" href="#"
+           ><span class="icon-favorite navbar-icon"></span
+         ></a>
+         <a class="nav-link" href="Login.html"
+           ><span class="icon-user navbar-icon"></span
+         ></a>
+       </div>
+     </div>
+   </div>
+ </nav>
+
+ <!-- Sidebar -->
+ <div id="overlay" onclick="closeNav()"></div>
+ <div class="sidebar" id="sidebarMobile">
+   <div class="sidebar-content">
+     <div>
+       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"
+         ><span class="icon-menu-open"></span
+       ></a>
+       <a href="javascript:void(0)" onclick="closeNav()"
+         ><span class="icon-home sidebar-icon"></span>Tour</a
+       >
+       <a href="javascript:void(0)" onclick="closeNav()"
+         ><span class="icon-shopping-list sidebar-icon"></span>Planning</a
+       >
+       <a href="javascript:void(0)" onclick="closeNav()"
+         ><span class="icon-ticket sidebar-icon"></span>My Trip</a
+       >
+       <a href="javascript:void(0)" onclick="closeNav()"
+         ><span class="icon-blog sidebar-icon"></span>Blogs</a
+       >
+     </div>
+     <a href="Login.html" class="btn btn-outline-primary primary-button d-flex w-100 signin-btn">
+       <span class="icon-login signin-icon"></span>
+       Sign in</a>
+   </div>
+ </div>
+  <!-- title -->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Group booking</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="container">
+    <div class="row detailbox-gbk">
+      <div class="col-12 col-md-7">
+        <div class="content-container">
+          <!-- Carousel -->
+          <div id="carouselGroupIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselGroupIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselGroupIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselGroupIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./imgs/detail1-gbk.png" alt="First slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imgs/detail1-gbk.png" alt="Second slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imgs/detail1-gbk.png" alt="Third slide" />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselGroupIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselGroupIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!-- Tour Info -->
+          <div class="tour-info">
+            <div class="d-flex align-items-center check-in-out">
+              <div class="flex-fill check-in">
+                <span class="sub-title">Check-in</span>
+                <h3 class="date">Thu, Jan 25</h3>
+                <span class="time">3:00 PM</span>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="flex-fill check-out">
+                <span class="sub-title">Check-out</span>
+                <h3 class="date">Sun, Jan 28</h3>
+                <span class="time">1:00 PM</span>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-tour tour-info-icon"></span>
+              <div class="tour-name flex-fill">
+                Special lunar new year tour:
+                <h3>DA NANG - HOI AN - HUE</h3>
+              </div>
+              <span class="icon-arrowline-down tour-info-icon"></span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-ticket tour-info-icon"></span>
+              <div class="tour-name">Plane ticket:</div>
+              <h3 class="flex-fill text-center ticket-value px-2">
+                4 tickets
+              </h3>
+              <span class="icon-arrowline-down tour-info-icon"></span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-bed tour-info-icon"></span>
+              <div class="tour-name">Hotel:</div>
+              <h3 class="flex-fill text-center ticket-value px-2">4 adult</h3>
+              <h3 class="flex-fill text-center ticket-value px-2">2 rooms</h3>
+              <span class="icon-arrowline-down tour-info-icon"></span>
+            </div>
+          </div>
+
+          <!-- Tour price -->
+          <div class="tour-price">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="label">Total</span>
+              <h3 class="price">1272,61$</h3>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="sub-label"><span class="label">Share bill</span> /1 person</span>
+              <h3 class="price">318,1$</h3>
+            </div>
+          </div>
+
+          <!-- Team info -->
+          <div class="team-info d-flex align-items-center">
+            <div class="flex-fill d-flex flex-column mr-2">
+              <span class="label">Your team</span>
+              <span class="price">3 people are participating...</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="user-image-container mr-2">
+                <img src="imgs/profile1.png" class="image-full" />
+              </div>
+              <div class="user-image-container">
+                <img src="imgs/profile2.png" class="image-full" />
+                <div class="overlay">+1</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="form-container-info">
+            <h3 class="form-title">Your Information</h3>
+            <div class="d-flex align-items-center sub-title">
+              <span class="icon-check"></span>
+              1/3 members have confirmed their Information.
+            </div>
+            <div class="d-flex align-items-center gender-select">
+              <div class="custom-control custom-radio">
+                <input type="radio" id="male" name="gender" class="custom-control-input" />
+                <label class="custom-control-label" for="male" id="labelgender">Male</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="female" name="gender" class="custom-control-input" />
+                <label class="custom-control-label" for="female" id="labelgender">Female</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="other" name="gender" class="custom-control-input" />
+                <label class="custom-control-label" for="other" id="labelgender">Other</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label id="labelinput-gbk" for="inputFirstname">First name <span class="asterisk"
+                  id="asterisk-gbk">*</span></label>
+              <input type="text" class="form-control" id="inputFirstname"
+                placeholder="As in passport or identity card" />
+            </div>
+            <div class="form-group">
+              <label id="labelinput-gbk" for="inputLastname">Last name <span class="asterisk"
+                  id="asterisk-gbk">*</span></label>
+              <input type="text" class="form-control" id="inputLastname"
+                placeholder="As in passport or identity card" />
+            </div>
+            <div class="row">
+              <div class="form-group col-12 col-lg-6">
+                <label id="labelinput-gbk" for="inputDob">Day of birth (DD/MM/YYYY)
+                  <span class="asterisk" id="asterisk-gbk">*</span></label>
+                <input type="text" class="form-control" id="inputDob" placeholder="__/__/____" />
+              </div>
+              <div class="form-group col-12 col-lg-6">
+                <label id="labelinput-gbk" for="countrySelect">Country <span class="asterisk"
+                    id="asterisk-gbk">*</span></label>
+                <select id="countrySelect" class="custom-select">
+                  <option selected>Select a country</option>
+                  <option value="vn">Viet Nam</option>
+                  <option value="us">United State</option>
+                  <option value="kr">Korea</option>
+                  <option value="ja">Japan</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12 col-lg-6">
+                <label id="labelinput-gbk" for="inputPhone">Phone number <span class="asterisk"
+                    id="asterisk-gbk">*</span></label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text phone-code-select">
+                      <img src="imgs/vn-icon.svg" />
+                      <span class="phone-code">+84</span>
+                      <span class="icon-arrowline-down"></span>
+                    </div>
+                  </div>
+                  <div class="separator"></div>
+                  <input type="text" class="form-control" id="inputPhone" placeholder="Phone number"
+                    aria-describedby="phone-code" />
+                </div>
+              </div>
+              <div class="form-group col-12 col-lg-6">
+                <label id="labelinput-gbk" for="inputEmail">Email</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="Please fill in email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label id="labelinput-gbk" for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Please fill in your address" />
+            </div>
+            <button type="button" class="btn btn-primary primary-button border-0 w-100 submit-btn">
+              Confirm
+            </button>
+            <div class="term">
+              By clicking the Confirm button, you agree to the Terms and use
+              and ensure that your information is completely accurate.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 d-flex flex-column">
+        <div class="content-container chat-container d-flex flex-column flex-fill">
+          <div class="chat-header">
+            <h3 class="title">Group chat</h3>
+          </div>
+          <div class="chat-content d-flex flex-column flex-fill">
+            <span class="date">20 Jan, 2024</span>
+            <div class="joined-users">
+              <span class="joined-user-item">
+                You just created a chat room.
+              </span>
+              <span class="joined-user-item">
+                Thien has joined.
+              </span>
+              <span class="joined-user-item">
+                Minh Thu has joined.
+              </span>
+              <span class="joined-user-item">
+                Anh Thu has joined.
+              </span>
+            </div>
+            <div class="chat-tour-info">
+              <span>Special lunar new year tour:</span>
+              <h3>DA NANG - HOI AN - HUE</h3>
+              For 4 days 3 nights.
+            </div>
+            <button type="button" class="btn btn-outline-primary primary-button w-100 makeaplan-btn">
+              Make a plan
+            </button>
+            <button type="button" class="btn btn-outline-primary primary-button w-100 plan-reminder-btn">
+              Set a reminder
+            </button>
+            <div class="chat-footer d-flex align-items-center mt-auto pt-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text message-left-icon">
+                    <a href="#" class="open-image">
+                      <span class="icon-image"></span>
+                    </a>
+                  </div>
+                </div>
+                <input type="text" class="form-control" id="inputMessage" placeholder="Type here..." />
+              </div>
+              <a href="#" class="send-btn">
+                <span class="icon-send"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container bill-container">
+          <div class="bill-content">
+            <h4 class="bill-title">Your bill</h4>
+            <div class="d-flex align-items-center sub-title">
+              <span class="icon-check"></span>
+              1/3 members have payment.
+            </div>
+            <div class="d-flex align-items-center price-container">
+              <span class="icon-tour left-icon"></span>
+              <div class="d-flex flex-column flex-fill">Tour ticket:</div>
+              <span class="price-item">206,48$</span>
+            </div>
+            <div class="d-flex align-items-center price-container">
+              <span class="icon-ticket left-icon"></span>
+              <div class="d-flex flex-column flex-fill">Plane ticket:</div>
+              <span class="price-item">101,39$</span>
+            </div>
+            <div class="d-flex align-items-center price-container">
+              <span class="icon-bed left-icon"></span>
+              <div class="d-flex flex-column flex-fill">Hotel:</div>
+              <span class="price-item">10,23$</span>
+            </div>
+          </div>
+          <div class="horizontal-line my-0"></div>
+          <div class="bill-footer">
+            <div class="d-flex align-items-center justify-content-between price-total-container">
+              <span class="total-text">Total</span>
+              <span class="total-price">318,1$</span>
+            </div>
+            <button type="button" class="btn btn-primary primary-button border-0 w-100 payment-btn">
+              Payment
+            </button>
+            <div class="bill-note">
+              You need to fill in all the information before making the
+              payment.
+            </div>
+            <div class="clock-container d-flex align-items-center justify-content-between">
+              This link will close in:
+              <div class="clock" id="clock">00 : 00 : 00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Plan banner -->
+  <div class="container-fluid plan-banner">
+    <img src="imgs/banner2-gbk.png" class="background img-fluid" />
+    <div class="container plan-banner-content">
+      <h3 class="title">
+        Have you and your group made plans for this trip yet?
+      </h3>
+      <div class="sub-title d-none d-md-block">
+        Are you spending too much time thinking about the next fun
+        destination? <br> Plan your trip so you don't miss a moment.
+      </div>
+      <button type="button" class="btn btn-outline-primary primary-button border-0 plan-btn">
+        Make a plan
+      </button>
+    </div>
+  </div>
+
+  <!-- Essential Da Nang -->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Essential Da Nang</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="essential" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/hotels.jpg" class="image-full" />
+                <h3>Hotels</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/homestays.jpg" class="image-full" />
+                <h3>Homestays</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+            <div class="d-none d-sm-block col-sm-4 col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/foodtours.jpg" class="image-full" />
+                <h3>Foodtours</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/checkin-places.jpg" class="image-full" />
+                <h3>Checkin-places</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="d-none d-sm-block col-sm-4 col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/hotels.jpg" class="image-full" />
+                <h3>Hotels</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/homestays.jpg" class="image-full" />
+                <h3>Homestays</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/foodtours.jpg" class="image-full" />
+                <h3>Foodtours</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="essential-item">
+                <img src="imgs/checkin-places.jpg" class="image-full" />
+                <h3>Checkin-places</h3>
+                <span>1000 available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev carousel-control" href="#essential" role="button" data-slide="prev">
+        <span class="icon-angle-left carousel-control-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next carousel-control" href="#essential" role="button" data-slide="next">
+        <span class="icon-angle-right carousel-control-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="d-md-none">
+      <div id="footerCollapse">
+        <div class="card">
+          <div class="card-header" id="AboutViatrips">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
+              aria-expanded="true" aria-controls="aboutViatrips">
+              About Viatrips
+            </button>
+          </div>
+
+          <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Carrers</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingExplore">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
+              aria-controls="explore">
+              Explore
+            </button>
+          </div>
+          <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Airplane ticket</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Group booking</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInformation">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
+              aria-controls="information">
+              Information
+            </button>
+          </div>
+          <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Tour booking policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">About Viatrips</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Airplane ticket</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Group booking</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Tour booking policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section ">
+          <h4 class="footer-title">Social media</h4>
+          <div class="d-flex">
+            <a href="#"><span class="icon-facebook social-icon"></span></a>
+            <a href="#"><span class="icon-instagram social-icon"></span></a>
+            <a href="#"><span class="icon-youtube social-icon"></span></a>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="icon-discord social-icon"></span></a>
+            <a href="#"><span class="icon-tiktok social-icon"></span></a>
+            <a href="#"><span class="icon-twitter social-icon"></span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-5 d-block d-md-none social-section ">
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-facebook social-icon"></span></a>
+                <a href="#"><span class="icon-instagram social-icon"></span></a>
+                <a href="#"><span class="icon-youtube social-icon"></span></a>
+              </div>
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-discord social-icon"></span></a>
+                <a href="#"><span class="icon-tiktok social-icon"></span></a>
+                <a href="#"><span class="icon-twitter social-icon"></span></a>
+              </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-12 ">
+              <h4 class="footer-title">Payment</h4>
+              <div class="d-flex flex-wrap">
+                <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 ">
+              <div class="input-group email-address">
+                <input placeholder="Enter Email Address" class="form-control email-input" />
+                <span class="input-group-append right-icon-container">
+                  <button class="btn border-0 text-white send-btn" type="button">
+                    <span class="icon-send send-icon"></span>
+                  </button>
+                </span>
+              </div>
+              <div class="receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <span class="checkmark"></span>
+                Yes, i want to receive news and products emails. Please read our
+                <a href="#">privacy policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright text-center">
+      Copyright © 2023 Viatrips. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

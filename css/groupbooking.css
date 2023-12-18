@@ -1,0 +1,671 @@
+/* breadcrumb */
+.breadcrumb-container .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  padding-left: -15px;
+  padding-right: -15px;
+  font-size: 14px;
+}
+
+.breadcrumb-container .breadcrumb-item {
+  align-items: center;
+  display: flex;
+}
+
+.breadcrumb-item > a {
+  color: #abb1ba;
+  text-decoration: none;
+}
+
+.breadcrumb-icon {
+  font-size: 24px;
+  display: block;
+}
+
+.breadcrumb-container .breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 4px;
+  color: #abb1ba;
+  content: "\e947";
+  font-family: "viatrips";
+  font-size: 16px;
+}
+
+.breadcrumb-item.active > a {
+  color: #5c6470;
+}
+
+
+
+/* content */
+.detailbox-gbk{
+  margin-bottom: 40px;
+}
+.content-container {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#carouselGroupIndicators img {
+  height: 246px;
+  object-fit: cover;
+}
+
+.check-in-out .sub-title {
+  color: #4340d8;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+}
+
+.check-in-out .date {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.check-in-out .time {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #d5d8dc;
+  height: 66px;
+  margin: 0 16px;
+}
+
+.horizontal-line {
+  background-color: #d5d8dc;
+  height: 1px;
+  margin: 16px 0;
+}
+
+.tour-info {
+  padding: 16px;
+}
+
+.tour-info .tour-info-icon {
+  font-size: 24px;
+  color: #000;
+  padding: 12px 20px;
+}
+
+.tour-info .tour-name {
+  font-size: 16px;
+}
+
+.tour-info .tour-name h3 {
+  color: #4340d8;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03px;
+  margin-top: 8px;
+}
+
+.tour-info .ticket-value {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03px;
+  margin-top: 8px;
+}
+
+.tour-price {
+  border-top: 1px solid #d5d8dc;
+  border-bottom: 1px solid #d5d8dc;
+  padding: 16px;
+}
+
+.tour-price .label,
+.team-info .label,
+.form-container-info .form-title {
+  color: #4340d8;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03px;
+}
+
+.team-info .sub-label {
+  color: #000;
+  font-size: 16px;
+}
+
+.tour-price .price {
+  color: #ff3a44;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.036px;
+}
+
+.team-info {
+  padding: 16px;
+  border-bottom: 1px solid #d5d8dc;
+}
+
+.team-info .user-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.team-info .user-image {
+  border-radius: 28px;
+  width: 56px;
+  height: 56px;
+}
+
+.team-info .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  color: #fff;
+}
+
+.form-container-info {
+  padding: 16px;
+}
+
+.sub-title {
+  color: #8f97a3;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sub-title .icon-check {
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+.form-container-info .gender-select {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.form-container-info .custom-radio {
+  margin-right: 16px;
+}
+
+#labelgender{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* radio check */
+.custom-control-input {
+  display: none;
+}
+
+.custom-control-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.custom-control-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateY(-50%);
+}
+
+.custom-control-input:checked + .custom-control-label::before {
+  background-color: #4340D8;
+  border-color: #4340D8;
+}
+
+.custom-control-label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+.custom-control-input:checked + .custom-control-label::after {
+  transform: translateY(-50%) scale(1);
+}
+
+
+.form-container-info .phone-code-select {
+  background-color: #fff;
+  border-right: none;
+}
+
+#labelinput-gbk{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#asterisk-gbk{
+  color: red;
+}
+
+.form-container-info #inputPhone {
+  border-left: none;
+}
+
+input:focus {
+  border-color: #4340D8 !important;
+  box-shadow: 0 0 0 0.2rem rgba(67, 64, 216, 0.25) !important;
+}
+.form-container-info .phone-code {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.form-container-info .phone-code .icon-arrowline-down {
+  font-size: 24px;
+  display: block;
+}
+
+.form-container-info .separator {
+  background-color: #d5d8dc;
+  height: 20px;
+  width: 1px;
+  display: flex;
+  align-self: center;
+}
+
+.form-container-info .submit-btn {
+  border-radius: 8px;
+  background: #4340d8;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 20px;
+}
+
+
+
+.form-container-info .term,
+.bill-note {
+  color: #737d8c;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.chat-header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4340d8;
+}
+
+.chat-header .title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.chat-content {
+  padding: 16px;
+}
+
+.chat-content .date {
+  color: #737d8c;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.joined-user-item {
+  display: block;
+  margin-bottom: 8px;
+  color: #737d8c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chat-tour-info {
+  border-radius: 8px;
+  background: #ececfb;
+  padding: 24px;
+  color: #737d8c;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.chat-tour-info span {
+  color: #000;
+  font-size: 16px;
+}
+
+.chat-tour-info h3 {
+  color: #4340d8;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.makeaplan-btn{
+  border-radius: 8px;
+  border: 2px solid #4340d8;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+  padding: 10px 20px;
+}
+
+
+
+.plan-reminder-btn {
+  border-radius: 8px;
+  border: 2px solid #4340d8;
+  background-color: #4340D8;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+  padding: 10px 20px;
+}
+
+
+
+.message-left-icon {
+  background-color: transparent;
+  border-right: none;
+  padding: 0 8px 0 20px;
+}
+
+.chat-footer #inputMessage {
+  border-left: none;
+}
+
+.open-image {
+  color: #000000;
+  text-decoration: none !important;
+}
+.open-image .icon-image {
+  color: #000000;
+  text-decoration: none !important;
+  font-size: 24px;
+  display: block;
+}
+
+.chat-container .send-btn {
+  color: #4340d8;
+  text-decoration: none !important;
+  margin-left: 16px;
+}
+
+.chat-container .send-btn .icon-send {
+  font-size: 24px;
+  padding: 12px;
+  display: block;
+}
+
+.bill-container {
+  margin-top: 24px;
+}
+
+.bill-container .bill-content,
+.bill-container .bill-footer {
+  padding: 16px;
+}
+
+.bill-title {
+  color: #4340d8;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price-container {
+  color: #000;
+  font-size: 16px;
+}
+
+.price-container .left-icon {
+  font-size: 24px;
+  padding: 12px 20px;
+}
+
+.price-container .price-item {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price-total-container {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price-total-container .total-price {
+  color: #ff3a44;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.payment-btn {
+  border-radius: 8px;
+  background: #4340d8;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 20px;
+  margin-top: 24px;
+}
+
+
+
+.clock-container {
+  display: flex;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: #ececfb;
+  padding: 16px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.clock-container .clock {
+  color: #ff3a44;
+  font-size: 24px;
+}
+
+.plan-banner {
+  margin-top: 24px;
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.plan-banner .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plan-banner .plan-banner-content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.plan-banner .title {
+  color: #fff;
+  text-align: center;
+}
+
+.plan-banner {
+  margin-top: 8px;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+.plan-banner .sub-title{
+color:#D5D8DC;
+font-size: 20px;
+font-weight: 500;
+}
+.plan-banner .plan-btn {
+  margin-top: 12px;
+  border-radius: 8px;
+  background: #4340d8;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 20px;
+  display: block;
+  color: #fff;
+  min-width: 210px;
+}
+
+.plan-banner .plan-btn:hover {
+  background: #FFCA00;
+  color: black;
+}
+
+#essential .carousel-control {
+  width: unset;
+  margin: 0 16px;
+}
+
+#essential .carousel-control-icon {
+  font-size: 24px;
+  background-color: #fff;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.essential-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.essential-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.essential-item span {
+  color: #454b54;
+  font-size: 16px;
+}
+
+
+
+/* RESPONSIVE */
+  
+  /* XL */
+  @media (min-width: 1200px) {
+    .form-container-info .submit-btn:hover {
+      background: #FFCA00;
+      color: black;
+      transition: all ease 0.5s;
+    }
+    .makeaplan-btn:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: black;
+        border: 2px solid #FFCA00;
+        transition: all ease 0.5s;
+      }
+      .plan-reminder-btn:hover {
+        background-color: #FFCA00;
+        border: 2px solid #FFCA00;
+        color: black;
+        transition: all ease 0.5s;
+      }
+      .payment-btn:hover {
+        background: #FFCA00;
+        color: black;
+        transition: all ease 0.5s;
+      }
+  }
+  
+  /* L */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .form-container-info .submit-btn:hover {
+      background: #FFCA00;
+      color: black;
+      transition: all ease 0.5s;
+    }
+    .makeaplan-btn:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: black;
+        border: 2px solid #FFCA00;
+        transition: all ease 0.5s;
+      }
+      .plan-reminder-btn:hover {
+        background-color: #FFCA00;
+        border: 2px solid #FFCA00;
+        color: black;
+        transition: all ease 0.5s;
+      }
+      .payment-btn:hover {
+        background: #FFCA00;
+        color: black;
+        transition: all ease 0.5s;
+      }
+  }
+  
+  /* MD */
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  }
+  
+  /* SM */
+  @media (min-width: 576px) and (max-width: 767px) {
+
+  }
+  /* XS */
+  @media (max-width: 575px) {
+
+  }
