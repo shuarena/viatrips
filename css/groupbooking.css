@@ -13,9 +13,10 @@
 }
 
 .breadcrumb-item > a {
-  color: #abb1ba;
+  color: #5C6470;
   text-decoration: none;
 }
+
 
 .breadcrumb-icon {
   font-size: 24px;
@@ -23,23 +24,19 @@
 }
 
 .breadcrumb-container .breadcrumb-item + .breadcrumb-item::before {
-  padding-right: 4px;
-  color: #abb1ba;
+  padding-right: 8px;
+  color: #5C6470;
   content: "\e947";
   font-family: "viatrips";
   font-size: 16px;
 }
 
 .breadcrumb-item.active > a {
-  color: #5c6470;
+  color: #8F97A3;
 }
-
-
 
 /* content */
-.detailbox-gbk{
-  margin-bottom: 40px;
-}
+
 .content-container {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -204,7 +201,7 @@
   margin-right: 16px;
 }
 
-#labelgender{
+#labelgender {
   font-size: 16px;
   font-weight: 600;
 }
@@ -235,8 +232,8 @@
 }
 
 .custom-control-input:checked + .custom-control-label::before {
-  background-color: #4340D8;
-  border-color: #4340D8;
+  background-color: #4340d8;
+  border-color: #4340d8;
 }
 
 .custom-control-label::after {
@@ -256,18 +253,17 @@
   transform: translateY(-50%) scale(1);
 }
 
-
 .form-container-info .phone-code-select {
   background-color: #fff;
   border-right: none;
 }
 
-#labelinput-gbk{
+#labelinput-gbk {
   font-size: 16px;
   font-weight: 700;
 }
 
-#asterisk-gbk{
+#asterisk-gbk {
   color: red;
 }
 
@@ -276,7 +272,7 @@
 }
 
 input:focus {
-  border-color: #4340D8 !important;
+  border-color: #4340d8 !important;
   box-shadow: 0 0 0 0.2rem rgba(67, 64, 216, 0.25) !important;
 }
 .form-container-info .phone-code {
@@ -306,8 +302,6 @@ input:focus {
   font-weight: 700;
   padding: 12px 20px;
 }
-
-
 
 .form-container-info .term,
 .bill-note {
@@ -379,7 +373,7 @@ input:focus {
   margin-bottom: 8px;
 }
 
-.makeaplan-btn{
+.makeaplan-btn {
   border-radius: 8px;
   border: 2px solid #4340d8;
   font-size: 16px;
@@ -389,20 +383,16 @@ input:focus {
   padding: 10px 20px;
 }
 
-
-
 .plan-reminder-btn {
   border-radius: 8px;
   border: 2px solid #4340d8;
-  background-color: #4340D8;
+  background-color: #4340d8;
   font-size: 16px;
   font-weight: 700;
   color: white;
   margin-bottom: 16px;
   padding: 10px 20px;
 }
-
-
 
 .message-left-icon {
   background-color: transparent;
@@ -488,8 +478,6 @@ input:focus {
   margin-top: 24px;
 }
 
-
-
 .clock-container {
   display: flex;
   margin-top: 20px;
@@ -543,10 +531,10 @@ input:focus {
   font-weight: 700;
   text-align: center;
 }
-.plan-banner .sub-title{
-color:#D5D8DC;
-font-size: 20px;
-font-weight: 500;
+.plan-banner .sub-title {
+  color: #d5d8dc;
+  font-size: 20px;
+  font-weight: 500;
 }
 .plan-banner .plan-btn {
   margin-top: 12px;
@@ -561,7 +549,7 @@ font-weight: 500;
 }
 
 .plan-banner .plan-btn:hover {
-  background: #FFCA00;
+  background: #ffca00;
   color: black;
 }
 
@@ -600,72 +588,105 @@ font-weight: 500;
   font-size: 16px;
 }
 
-
-
 /* RESPONSIVE */
-  
-  /* XL */
-  @media (min-width: 1200px) {
-    .form-container-info .submit-btn:hover {
-      background: #FFCA00;
-      color: black;
-      transition: all ease 0.5s;
-    }
-    .makeaplan-btn:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: black;
-        border: 2px solid #FFCA00;
-        transition: all ease 0.5s;
-      }
-      .plan-reminder-btn:hover {
-        background-color: #FFCA00;
-        border: 2px solid #FFCA00;
-        color: black;
-        transition: all ease 0.5s;
-      }
-      .payment-btn:hover {
-        background: #FFCA00;
-        color: black;
-        transition: all ease 0.5s;
-      }
-  }
-  
-  /* L */
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .form-container-info .submit-btn:hover {
-      background: #FFCA00;
-      color: black;
-      transition: all ease 0.5s;
-    }
-    .makeaplan-btn:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: black;
-        border: 2px solid #FFCA00;
-        transition: all ease 0.5s;
-      }
-      .plan-reminder-btn:hover {
-        background-color: #FFCA00;
-        border: 2px solid #FFCA00;
-        color: black;
-        transition: all ease 0.5s;
-      }
-      .payment-btn:hover {
-        background: #FFCA00;
-        color: black;
-        transition: all ease 0.5s;
-      }
-  }
-  
-  /* MD */
-  @media (min-width: 768px) and (max-width: 991px) {
 
+/* XL */
+@media (min-width: 1200px) {
+  .form-container-info .submit-btn:hover {
+    background: #ffca00;
+    color: black;
+    transition: all ease 0.5s;
   }
-  
-  /* SM */
-  @media (min-width: 576px) and (max-width: 767px) {
+  .makeaplan-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid #ffca00;
+    transition: all ease 0.5s;
+  }
+  .plan-reminder-btn:hover {
+    background-color: #ffca00;
+    border: 2px solid #ffca00;
+    color: black;
+    transition: all ease 0.5s;
+  }
+  .payment-btn:hover {
+    background: #ffca00;
+    color: black;
+    transition: all ease 0.5s;
+  }
+  .essental-gbk {
+    margin-bottom: 40px;
+  }
+  .detailbox-gbk {
+    margin-bottom: 40px;
+  }
+  .breadcrumb-item > a:hover {
+    color: #4340d8;
+    text-decoration: none;
+  }
+}
 
+/* L */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .form-container-info .submit-btn:hover {
+    background: #ffca00;
+    color: black;
+    transition: all ease 0.5s;
   }
-  /* XS */
-  @media (max-width: 575px) {
+  .makeaplan-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid #ffca00;
+    transition: all ease 0.5s;
+  }
+  .plan-reminder-btn:hover {
+    background-color: #ffca00;
+    border: 2px solid #ffca00;
+    color: black;
+    transition: all ease 0.5s;
+  }
+  .payment-btn:hover {
+    background: #ffca00;
+    color: black;
+    transition: all ease 0.5s;
+  }
+  .essental-gbk {
+    margin-bottom: 40px;
+  }
+  .detailbox-gbk {
+    margin-bottom: 40px;
+  }
+  .breadcrumb-item > a:hover {
+    color: #4340d8;
+    text-decoration: none;
+  }
+}
 
+/* MD */
+@media (min-width: 768px) and (max-width: 991px) {
+  .essental-gbk {
+    margin-bottom: 32px;
   }
+  .detailbox-gbk {
+    margin-bottom: 32px;
+  }
+}
+
+/* SM */
+@media (min-width: 576px) and (max-width: 767px) {
+  .essental-gbk {
+    margin-bottom: 24px;
+  }
+  .detailbox-gbk {
+    margin-bottom: 24px;
+  }
+}
+/* XS */
+@media (max-width: 575px) {
+  .essental-gbk {
+    margin-bottom: 24px;
+  }
+  .detailbox-gbk {
+    margin-bottom: 24px;
+  }
+}

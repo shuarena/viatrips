@@ -1,0 +1,374 @@
+/* Banner 1 Blog Detail */
+#banner1-Blogdetail {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner1-Blogdetail img {
+  width: 100%;
+  /* Đảm bảo rằng hình ảnh sẽ chiếm toàn bộ chiều rộng của phần tử cha */
+  height: auto;
+  /* Đảm bảo chiều cao tự động điều chỉnh theo tỉ lệ của hình ảnh */
+  max-width: 100%;
+  /* Giữ cho hình ảnh không vượt quá kích thước chiều rộng của phần tử cha */
+  display: block;
+  /* Loại bỏ khoảng trống dưới hình ảnh khi nó là một phần tử inline */
+  margin: 0 auto;
+  /* Canh giữa hình ảnh trong phần tử cha */
+}
+
+/* breadcrumb */
+.breadcrumb-container .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  padding-left: -15px;
+  padding-right: -15px;
+  font-size: 14px;
+}
+
+.breadcrumb-container .breadcrumb-item {
+  align-items: center;
+  display: flex;
+}
+
+.breadcrumb-item>a {
+  color: #5C6470;
+  text-decoration: none;
+}
+
+.breadcrumb-item>a:hover {
+  color: #4340d8;
+  text-decoration: none;
+}
+
+.breadcrumb-icon {
+  font-size: 24px;
+  display: block;
+}
+
+.breadcrumb-container .breadcrumb-item+.breadcrumb-item::before {
+  padding-right: 8px;
+  color: #5C6470;
+  content: "\e947";
+  font-family: "viatrips";
+  font-size: 16px;
+}
+
+.breadcrumb-item.active>a {
+  color: #8F97A3;
+}
+
+/* Title */
+#Title1-Blogdetail {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: bold;
+  color: #4340D8;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+/* Content */
+.Content-Blogdetail {
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+/* Intro */
+#Intro-Blogdetail {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+  color: black;
+  margin-top: 24px;
+}
+
+/* Title2 */
+.Title2-Blogdetail {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  color: black;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+/* imgs1 */
+.img1-Blogdetail {
+  padding: 0 auto;
+  margin-top: 24px;
+}
+
+.img1-Blogdetail img {
+  width: auto;
+  height: 348px;
+}
+
+/* imgs2 */
+.img2-Blogdetail {
+  padding: 0;
+  margin-top: 24px;
+}
+
+.img2-Blogdetail img {
+  width: 1110px;
+  height: 600px;
+}
+
+/* Note */
+.NoteTitle-Blogdetail {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 24px 0 0 0;
+}
+
+.NoteContent-Blogdetail {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 8px 0 0 0;
+}
+
+/* Title Blog RCM */
+.title-Blogdetail h2 {
+  justify-content: center;
+  font-size: 24px;
+  color: #4340d8;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  box-sizing: none;
+}
+
+.underline-title-Blogdetail {
+  width: 40px;
+  height: 4px;
+  background-color: #FFCA00;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  margin-right: 154px;
+  float: right;
+}
+
+/* Blog Card */
+.card {
+  max-width: 350px;
+  width: 100%;
+  height: 411px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.card-img-holder {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.card-img-holder img {
+  width: 100%;
+  height: auto;
+  max-height: 15rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-title {
+  color: black;
+  padding: 16px 0 0 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.description {
+  padding: 8px 0 0 0;
+  color: black;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.blog-time {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: black;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.options a {
+  padding-left: 62%;
+  padding-top: 24px;
+  font-weight: 600;
+  color: #4340D8;
+}
+
+/* XL */
+@media (min-width:1200px) {}
+
+/* LG */
+@media (min-width:992px) and (max-width:1199px) {
+  .img1-Blogdetail img {
+    width: auto;
+    height: 292px;
+  }
+
+  .img2-Blogdetail img {
+    width: 960px;
+    height: 502px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Title Blog Detail */
+  .underline-title-Blogdetail {
+    margin-right: 110px;
+  }
+
+  .options a {
+    padding-left: 56%;
+    padding-top: 24px;
+    font-weight: 600;
+    color: #4340D8;
+  }
+}
+
+/* MD */
+@media (min-width:768px) and (max-width:991px) {
+  .img1-Blogdetail img {
+    width: auto;
+    height: 216px;
+  }
+
+  .img2-Blogdetail img {
+    width: 720px;
+    height: 372px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Title Blog Detail */
+  .underline-title-Blogdetail {
+    margin-right: 48px;
+  }
+
+  /* Title Blog Detail */
+}
+
+/* SM */
+@media (min-width:576px) and (max-width:767px) {
+  .img1-Blogdetail img {
+    width: auto;
+    height: 158px;
+  }
+
+  .img2-Blogdetail img {
+    width: 540px;
+    height: 274px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Title Blog Detail */
+  .title-Blogdetail h2 {
+    font-size: 20px;
+  }
+
+  .underline-title-Blogdetail {
+    margin-right: 20px;
+    margin-bottom: 0px !important;
+  }
+
+  /* Title Blog Detail */
+  .card {
+    max-width: 510px;
+    width: 100%;
+    height: 440px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+  }
+
+  .options a {
+    padding-left: 75%;
+    padding-top: 24px;
+    font-weight: 600;
+    color: #4340D8;
+  }
+}
+
+/* XS */
+@media (max-width:575px) {
+  .img1-Blogdetail img {
+    width: auto;
+    height: 185px;
+  }
+
+  .img2-Blogdetail img {
+    width: 420px;
+    height: 210px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Title Blog Detail */
+  .title-Blogdetail h2 {
+    font-size: 20px;
+  }
+
+  .underline-title-Blogdetail {
+    margin-right: 20px;
+    margin-bottom: 0px !important;
+  }
+
+  /* Title Blog Detail */
+  .card {
+    max-width: 390px;
+    width: 100%;
+    height: 440px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+  }
+
+  .options a {
+    padding-left: 65%;
+    padding-top: 24px;
+    font-weight: 600;
+    color: #4340D8;
+  }
+}

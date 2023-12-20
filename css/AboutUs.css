@@ -1,0 +1,628 @@
+/* Banner 1 Blog Detail */
+#banner1-About_Us {
+    width: 100%;
+    height:auto;
+    margin:0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+#banner1-About_Us img {
+    width: 100%; /* Đảm bảo rằng hình ảnh sẽ chiếm toàn bộ chiều rộng của phần tử cha */
+    height: auto; /* Đảm bảo chiều cao tự động điều chỉnh theo tỉ lệ của hình ảnh */
+    max-width: 100%; /* Giữ cho hình ảnh không vượt quá kích thước chiều rộng của phần tử cha */
+    display: block; /* Loại bỏ khoảng trống dưới hình ảnh khi nó là một phần tử inline */
+    margin: 0 auto; /* Canh giữa hình ảnh trong phần tử cha */
+}
+/* breadcum */
+#breadcrumb {
+    margin-top: 16px;
+  }
+  #breadcrumb a {
+    font-size: 24px;
+    margin-top: 16px;
+    color:#ABB1BA;
+    margin-right: 8px;
+  }
+  .Contentbreadcrumb-aboutus{
+    font-size: 16px;
+  }
+  #breadcrumb a:hover {
+    text-decoration: none;
+  }
+  .icon-arrowline-right{
+    font-size: 24px !important;
+  }
+/* title 1 */
+.titleWhoWeAre h2{
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+.underline-titleWhoWeAre {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-right: 185px;
+    float: right;
+}
+/* Title About Us */
+.titleAboutUs h2{
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+.underline-titleAboutUs {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-right: 200px;
+    float: right;
+}
+/* Title Our */
+.titleOur h2{
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+.underline-titleOur {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-right: 397px;
+    float: right;
+}
+/* Title Partner */
+.titlePartner h2{
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+.underline-titlePartner {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-right: 474px;
+    float: right;
+}
+/* Title ContactUs */
+.titleContactUs h2{
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+.underline-titleContactUs {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 0px;
+    margin-right: 475px;
+    float: right;
+}
+/* Content1 */
+#TitleWhoWeAre-aboutus{
+    font-size: 20px;
+    line-height:22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+#Title1WhoWeAre-aboutus{
+    font-size: 16px;
+    line-height:18px;
+    margin-bottom: 8px;
+}
+#Title2WhoWeAre-aboutus{
+    font-size: 16px;
+    line-height:18px;
+    margin-bottom: 0px !important;
+}
+/* Content2 */
+.imgvision-aboutus{
+    margin-top: 24px;
+    background-size: cover;
+    background-position: center;
+}
+.imgvision-aboutus img {
+    max-width: 541px;
+    width: 100%;
+    height: 331px;
+}
+.ContentVision-aboutus{
+    margin-top: 24px;
+}
+#TitleVision-aboutus{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #4340D8;
+    padding-top: 76px;
+}
+#BodyVision-aboutus {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.imgmission-aboutus{
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center;
+}
+.imgmission-aboutus img {
+    max-width: 541px;
+    width: 100%;
+    height: 331px;
+}
+.ContentMission-aboutus{
+    margin-top: 0px;
+    height: 275px;
+}
+#TitleMission-aboutus {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #4340D8;
+    padding-top: 96px;
+}
+#BodyMission-aboutus {
+    font-size: 16px;
+    line-height: 18px;
+}
+#TitleCommit-aboutus {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #4340D8;
+    padding-top: 84px;
+}
+#BodyCommit-aboutus {
+    font-size: 16px;
+    line-height: 18px;
+}
+#TitleService-aboutus {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #4340D8;
+    padding-top: 0px;
+}
+#BodyService-aboutus {
+    font-size: 16px;
+    line-height: 18px;
+}
+/* 2/3 column */
+.column-66 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .column-33 {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+/* Button */
+.primary-button {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid #4340d8;
+  }
+  
+  .primary-button:hover {
+    background-color: white;
+    border: 2px solid #FFCA00;
+    color: #000000;
+  }
+  
+  .show-all-icon {
+    font-size: 24px;
+    padding-left: 4px;
+  }
+/* Content Our */
+.ContentOur{
+    margin-top: 8px;
+    padding-top: 16px;
+}
+/* Partner */
+.imgPartner img{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+/* XL */
+@media (min-width:1200px) {
+
+}
+/* LG */
+@media (min-width:992px) and (max-width:1199px) {
+    .underline-titleWhoWeAre {
+        margin-right: 140px;
+    }/* Title Blog Detail */ 
+    .underline-titleAboutUs {
+        margin-right: 158px;
+    }  
+    .underline-titleOur {
+        margin-right: 307px;
+    }  
+    .underline-titlePartner {
+        margin-right: 382px;
+    } 
+    .underline-titleContactUs {
+        margin-right: 386px;
+    }    
+    .imgvision-aboutus img {
+        max-width: 450px;
+        width: 100%;
+        height: 275px;
+    }
+    .imgmission-aboutus img {
+        max-width: 450px;
+        width: 100%;
+        height: 275px;
+    }
+    #TitleCommit-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 30px;
+    }
+    .Vision img {
+      max-width: 450px;
+      width: 100%;
+      height: auto;
+    }
+    .Mission img {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+    .Commit img {
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
+    .imgPartner img{
+        max-width: 290px;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+/* MD */
+@media (min-width:768px) and (max-width:991px) {
+    .imgvision-aboutus{
+        margin-left: -15px;
+        width: 30%;
+    }
+    .underline-titleWhoWeAre {
+        margin-right: 80px;
+    }/* Title Blog Detail */  
+    .underline-titleAboutUs {
+        margin-right: 96px;
+    } 
+    .underline-titleOur {
+        margin-right: 187px;
+    } 
+    .underline-titlePartner {
+        margin-right: 262px;
+    }
+    .underline-titleContactUs {
+        margin-right: 267px;
+    }     
+    .imgvision-aboutus img {
+        max-width: 328px;
+        width: 100%;
+        height: 201px;
+    }
+    .imgmission-aboutus img {
+        max-width: 328px;
+        width: 100%;
+        height: 201px;
+    }
+    #TitleVision-aboutus{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 20px;
+    }
+    #TitleMission-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+    }
+    #TitleCommit-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 10px;
+    }
+    .Vision img {
+        max-width: 690px;
+        width: 100%;
+        height: auto;
+      }
+      .Mission img {
+          max-width: 690px;
+          width: 100%;
+          height: auto;
+      }
+      .Commit img {
+          max-width: 690px;
+          width: 100%;
+          height: auto;
+      }
+      .imgPartner img{
+        max-width: 210px;
+        width: 100%;
+        height: auto;
+    }
+}
+/* SM */
+@media (min-width:576px) and (max-width:767px) {
+    .titleWhoWeAre h2{
+        font-size: 20px;
+    }
+    .underline-titleWhoWeAre {
+        margin-right: 45px;
+    }
+    .titleAboutUs h2{
+        font-size: 20px;
+    }
+    .underline-titleAboutUs {
+        margin-right: 60px;
+    }
+    .underline-titleOur {
+        margin-right: 97px;
+    }
+    .underline-titlePartner {
+        margin-right: 174px;
+    }  
+    .underline-titleContactUs {
+        margin-right: 176px;
+    }   
+    .imgvision-aboutus img {
+        max-width: 240px;
+        width: 100%;
+        height: 147px;
+    }
+    .imgmission-aboutus img {
+        max-width: 240px;
+        width: 100%;
+        height: 147px;
+        margin-top: -73px;
+    }
+    #TitleVision-aboutus{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+    }
+    #TitleMission-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+        margin-top: -20px;
+    }
+    #TitleCommit-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+    }
+    .Vision img {
+        max-width: 510px;
+        width: 100%;
+        height: auto;
+      }
+      .Mission img {
+          max-width: 510px;
+          width: 100%;
+          height: auto;
+      }
+      .Commit img {
+          max-width: 510px;
+          width: 100%;
+          height: auto;
+      }
+      .imgPartner img{
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+}
+/* XS */
+@media (max-width:575px) {
+    .titleWhoWeAre h2{
+        font-size: 20px;
+    }
+    .underline-titleWhoWeAre {
+        margin-right: 15px;
+    }
+    .titleAboutUs h2{
+        font-size: 20px;
+    }
+    .underline-titleAboutUs {
+        margin-right: 30px;
+    }
+    .underline-titleOur {
+        margin-right: 36px;
+    }
+    .underline-titlePartner {
+        margin-right: 113px;
+    } 
+    .underline-titleContactUs {
+        margin-right: 118px;
+    }  
+    #triggerfooterabout{
+        float: right;
+    }
+    .imgvision-aboutus img {
+        max-width: 180px;
+        width: 100%;
+        height: 110px;
+    }
+    .imgmission-aboutus img {
+        max-width: 180px;
+        width: 100%;
+        height: 110px;
+    }
+    #TitleVision-aboutus{
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+    }
+    #TitleMission-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+        margin-top: 20px;
+    }
+    #TitleCommit-aboutus {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4340D8;
+        padding-top: 0px;
+    }
+    .Vision img {
+        max-width: 390px;
+        width: 100%;
+        height: auto;
+      }
+      .Mission img {
+          max-width: 390px;
+          width: 100%;
+          height: auto;
+      }
+      .Commit img {
+          max-width: 390px;
+          width: 100%;
+          height: auto;
+      }
+      .imgPartner img{
+        max-width: 110px;
+        width: 100%;
+        height: auto;
+    }
+}
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+    }
+   
+  }
+
+/* contact us */
+.contactusbox-FAQs {
+    padding: 24px;
+  }
+  
+  .title2-FAQs {
+    font-size: 20px;
+    color: #454b54;
+    font-weight: 500;
+    margin-bottom: 16px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .labelcontactus-FAQs {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  #input-FAQs {
+    border-radius: 8px;
+    padding: 12px 20px;
+    border: solid 1px #737d8c;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  
+  #input-FAQs:focus {
+    border: solid 1px #4340d8;
+  }
+  
+  #comment-FAQs {
+    border-radius: 8px;
+    padding: 12px 20px;
+    border: solid 1px #737d8c;
+    font-size: 16px;
+    font-weight: 400;
+    height: 136px;
+  }
+  
+  #comment-FAQs:focus {
+    border: solid 1px #4340d8;
+  }
+  
+  .btncontactus-FAQs {
+    background-color: #4340d8;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    float: right;
+    font-size: 16px;
+    font-weight: 700;
+  }
+ 

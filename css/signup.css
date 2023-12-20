@@ -64,7 +64,7 @@ body {
   border-radius: 8px;
 }
 input:focus {
-  border-color: #4340D8 !important;
+  border-color: #4340d8 !important;
   box-shadow: 0 0 0 0.2rem rgba(67, 64, 216, 0.25) !important;
 }
 .email-form-group {
@@ -92,8 +92,6 @@ input:focus {
   align-items: center;
 }
 
-
-
 .forgot-password {
   color: #4340d8;
 }
@@ -108,8 +106,6 @@ input:focus {
   font-weight: 700;
   font-size: 16px;
 }
-
-
 
 .login-form-or {
   margin: 24px 0;
@@ -144,8 +140,6 @@ input:focus {
   border-radius: 8px;
   background-color: #ffffff;
 }
-
-
 
 .login-form-social-icon {
   width: 20px;
@@ -201,11 +195,11 @@ input:focus {
   }
   .show-hide-password:hover {
     color: #4340d8;
-    text-decoration: #4340D8;
+    text-decoration: #4340d8;
     transition: all ease 0.5s;
   }
   .login-btn:hover {
-    background-color: #FFCA00;
+    background-color: #ffca00;
     color: black;
     transition: all ease 0.5s;
   }
@@ -214,7 +208,7 @@ input:focus {
     transition: all ease 0.5s;
   }
   .login-form-register a:hover {
-    color: #4340D8;
+    color: #4340d8;
     text-decoration: underline;
     transition: all ease 0.5s;
   }
@@ -236,11 +230,11 @@ input:focus {
   }
   .show-hide-password:hover {
     color: #4340d8;
-    text-decoration: #4340D8;
+    text-decoration: #4340d8;
     transition: all ease 0.5s;
   }
   .login-btn:hover {
-    background-color: #FFCA00;
+    background-color: #ffca00;
     color: black;
     transition: all ease 0.5s;
   }
@@ -249,7 +243,7 @@ input:focus {
     transition: all ease 0.5s;
   }
   .login-form-register a:hover {
-    color: #4340D8;
+    color: #4340d8;
     text-decoration: underline;
     transition: all ease 0.5s;
   }
@@ -257,6 +251,9 @@ input:focus {
 
 /* MD */
 @media (min-width: 768px) and (max-width: 991px) {
+  .login-form-content {
+    max-width: 450px;
+  }
   .login-container {
     width: 100%;
     max-width: inherit;
@@ -269,19 +266,22 @@ input:focus {
     text-decoration: none;
   }
   .login-btn:hover {
-    background-color: #4340D8;
+    background-color: #4340d8;
   }
   .login-form-social-btn:hover {
     background-color: white;
   }
   .login-form-register a:hover {
-    color: #4340D8;
+    color: #4340d8;
     text-decoration: none;
   }
 }
 
 /* SM */
 @media (min-width: 576px) and (max-width: 767px) {
+  .login-form-content {
+    max-width: 450px;
+  }
   .login-container {
     width: 100%;
     max-width: inherit;
@@ -294,18 +294,21 @@ input:focus {
     text-decoration: none;
   }
   .login-btn:hover {
-    background-color: #4340D8;
+    background-color: #4340d8;
   }
   .login-form-social-btn:hover {
     background-color: white;
   }
   .login-form-register a:hover {
-    color: #4340D8;
+    color: #4340d8;
     text-decoration: none;
   }
 }
 /* XS */
 @media (max-width: 575px) {
+  .login-form-content {
+    max-width: 450px;
+  }
   .login-container {
     width: 100%;
     max-width: inherit;
@@ -318,13 +321,13 @@ input:focus {
     text-decoration: none;
   }
   .login-btn:hover {
-    background-color: #4340D8;
+    background-color: #4340d8;
   }
   .login-form-social-btn:hover {
     background-color: white;
   }
   .login-form-register a:hover {
-    color: #4340D8;
+    color: #4340d8;
     text-decoration: none;
   }
 }

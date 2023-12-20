@@ -1,0 +1,833 @@
+/*addressbar*/
+#addressbar {
+    margin-top: 88px;
+  }
+  
+  .icon-home,
+  .icon-arrowline-right {
+    color: #ABB1BA;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .icon-home:hover {
+    text-decoration: none;
+    color: #5c6470;
+  }
+  
+  #nameaddrressbar {
+    color: #5c6470;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 2px;
+    margin: 0px;
+    font-weight: bold;
+  }
+  
+  #nameaddrressbar:hover {
+    color: #5c6470;
+    text-decoration: none;
+  }
+  
+  /* title 1 */
+  h2 {
+    margin-bottom: 0px;
+  }
+  
+  .title-home h2,
+  .title-home h4,
+  .title-Popular h2,
+  .title-Hotel h2 {
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .underline-title,
+  .underline-titlePopular,
+  .underline-titleHotel {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    float: right;
+  }
+  
+  /*content1*/
+  #searching-trip {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .input-box3,
+  .input-box4 {
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 16px;
+    margin: 0px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #737D8C;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  
+  .button {
+    font-size: 16px;
+    line-height: 32px;
+    background-color: #4340d8;
+    color: white;
+    font-weight: bold;
+    width: 178px;
+    border-radius: 8px;
+    border: #4340d8 2px solid;
+  }
+  
+  #content1-box {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #content1-box2 {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #content2-1,
+  #content2-2,
+  #content2 {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  
+  #img2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  h4 {
+    margin-bottom: 0px;
+    font-size: 24px;
+  }
+  
+  #chu {
+    font-size: 20px;
+    color: #737D8C;
+  }
+  
+  .icon-star {
+    color: #FFCA00;
+  }
+  
+  #number-star {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #total {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #price {
+    font-size: 24px;
+    color: #FF3A44;
+    font-weight: bold;
+    float: right;
+    margin-right: 16px;
+  }
+  
+  hr {
+    margin-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  h5 {
+    font: 16px;
+    font-weight: bold;
+  }
+  
+  h6 {
+    font: 16px;
+    font-weight: bold;
+  }
+  
+  h7 {
+    font: 16px;
+    font-weight: bold;
+  }
+  
+  h8 {
+    font: 16px;
+    font-weight: bold;
+  }
+  
+  h9 {
+    font: 16px;
+    font-weight: bold;
+  
+  }
+  
+  .line {
+    border: 1px solid #D5D8DC;
+    width: 1px;
+    height: 79px;
+    background-color: #D5D8DC;
+  }
+  
+  #line {
+    padding: 0px;
+    margin: 0px;
+  
+  }
+  
+  #time {
+    margin-right: 16px;
+  }
+  
+  #places {
+    padding: 10px;
+  }
+  
+  .button2 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    background-color: #4340d8;
+    border-radius: 8px;
+    border: #4340d8 solid 2px;
+    width: 200px;
+  }
+  
+  /* Explore */
+  .Explore h1 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .Explore p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #737D8C;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+  
+  /* Popular */
+  .Popular h1 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .Popular p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #737D8C;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+  
+  /* Popular */
+  .Hotel h1 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .Hotel p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #737D8C;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+  
+  .banner {
+    /* The image used */
+    margin-top: 40px;
+    background-image: url("../imgs/imgs-Mytrip/bannerfinal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+  }
+  
+  #TitleFinal {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 24px;
+    color: white;
+  }
+  
+  #ContentFinal {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: white;
+  }
+  
+  .primary-button {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid #4340d8;
+    margin-top: 0px !important;
+  }
+  
+  .mt-4,
+  .my-4 {
+    margin-top: 0px !important;
+  }
+  
+  .primary-button:hover {
+    background-color: #4340d8;
+  }
+  
+  .show-all-icon {
+    font-size: 24px;
+    padding-left: 4px;
+  }
+  
+  
+  /* RESPONSIVE */
+  /* XL */
+  @media (min-width: 1200px) {
+    #navbarNav {
+      display: none !important;
+    }
+  
+    /* title1 */
+    .underline-title {
+      margin-right: 127px;
+    }
+  
+    .underline-titlePopular {
+      margin-right: 384px;
+    }
+  
+    .underline-titleHotel {
+      margin-right: 436px;
+    }
+  
+    .button1:hover {
+      background-color: #4340d8;
+      border: #4340d8 solid 2px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      margin-left: 48px;
+      transition: all ease 0.3s;
+    }
+  
+    /* title2 */
+    #titile2 {
+      margin-right: 170px;
+    }
+  
+    #total {
+      margin-left: 239px;
+    }
+  
+    .line {
+      border: 1px solid #D5D8DC;
+      width: 1px;
+      height: 79px;
+      margin-right: 220px;
+      background-color: #D5D8DC;
+    }
+  
+    #line {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #time {
+      margin-right: 16px;
+    }
+  
+    #places {
+      padding: 10px;
+      padding-right: 40px;
+      margin-left: -60px;
+      margin-right: 40px;
+    }
+  
+    .button2 {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 32px;
+      background-color: #4340d8;
+      border-radius: 8px;
+      border: #4340d8 solid 2px;
+      width: 200px;
+      margin-top: 16px;
+      margin-left: 143px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 165px;
+    }
+  
+    /* title3*/
+    #titile3 {
+      margin-right: 415px;
+    }
+  }
+  
+  /* LG */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .banner {
+      /* The image used */
+      background-image: url("../imgs/imgs-Mytrip/bannerfinal.png");
+      width: 1024px;
+      height: 350px;
+    }
+  
+    #navbarNav {
+      display: none !important;
+    }
+  
+    /* title1 */
+    .underline-title {
+      margin-right: 82px;
+    }
+  
+    .underline-titlePopular {
+      margin-right: 294px;
+    }
+  
+    .underline-titleHotel {
+      margin-right: 345px;
+    }
+  
+    /* title2 */
+    #titile2 {
+      margin-right: 127px;
+    }
+  
+    #total {
+      margin-left: 118px;
+    }
+  
+    .line {
+      border: 1px solid #D5D8DC;
+      width: 1px;
+      height: 79px;
+      margin-right: 220px;
+      background-color: #D5D8DC;
+    }
+  
+    #line {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #time {
+      margin-right: 16px;
+    }
+  
+    #places {
+      padding: 8px;
+      padding-right: 48px;
+      margin-left: -61px;
+      margin-right: -67px;
+    }
+  
+    .button2 {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 32px;
+      background-color: #4340d8;
+      border-radius: 8px;
+      border: #4340d8 solid 2px;
+      width: 200px;
+      margin-top: 16px;
+      margin-left: 143px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 165px;
+    }
+  
+    /* title3*/
+    #titile3 {
+      margin-right: 327px;
+    }
+  
+  }
+  
+  /* MD */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .banner {
+      /* The image used */
+      background-image: url("../imgs/imgs-Mytrip/bannerfinal.png");
+      width: 768px;
+      height: 350px;
+    }
+  
+    #navbarNav {
+      display: none !important;
+    }
+  
+    /* title1 */
+    .underline-title {
+      margin-right: 21px;
+    }
+  
+    .title-home h2 {
+      margin-top: 32px;
+    }
+  
+    .underline-titlePopular {
+      margin-right: 173px;
+    }
+  
+    .underline-titleHotel {
+      margin-right: 224px;
+    }
+  
+    /* title2 */
+    #titile2 {
+      margin-right: 63px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 130px;
+    }
+  
+    h4 {
+      margin-bottom: 0px;
+      font-size: 24px;
+    }
+  
+    #chu {
+      font-size: 16px;
+      color: #737D8C;
+    }
+  
+    #total {
+      margin-left: 20px;
+    }
+  
+    .line {
+      border: 1px solid #D5D8DC;
+      width: 1px;
+      height: 79px;
+      margin-right: 220px;
+      background-color: #D5D8DC;
+    }
+  
+    #line {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #time {
+      margin-right: 35px;
+    }
+  
+    #places {
+      padding: 8px;
+      padding-right: 22px;
+      margin-left: -40px;
+      margin-right: -7px;
+    }
+  
+    .button2 {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 32px;
+      background-color: #4340d8;
+      border-radius: 8px;
+      border: #4340d8 solid 2px;
+      width: 130px;
+      margin-top: 16px;
+      margin-left: 3px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 165px;
+    }
+  
+    /* title3 */
+    #titile3 {
+      margin-right: 207px;
+    }
+  }
+  
+  /* SM */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .banner {
+      /* The image used */
+      background-image: url("../imgs/imgs-Mytrip/bannerfinal.png");
+      width: 576px;
+      height: 400px;
+    }
+  
+    /* title1 */
+    .underline-title {
+      margin-right: 21px;
+    }
+  
+    .title-home h2 {
+      margin-top: 24px;
+    }
+  
+    #img-content1 {
+      margin-bottom: 8px;
+    }
+  
+    .underline-titlePopular {
+      margin-right: 84px;
+    }
+  
+    .underline-titleHotel {
+      margin-right: 135px;
+    }
+  
+    /* title2 */
+    #titile2 {
+      margin-right: 62px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-bottom: 8px;
+    }
+  
+    h4 {
+      margin-bottom: 0px;
+      font-size: 24px;
+      margin-left: 16px;
+    }
+  
+    #chu {
+      font-size: 16px;
+      color: #737D8C;
+      margin-left: 16px;
+    }
+  
+    #total {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 54px;
+    }
+  
+    hr {
+      margin-right: 16px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 16px;
+    }
+  
+    .line {
+      border: 1px solid #D5D8DC;
+      width: 1px;
+      height: 79px;
+      margin-right: 220px;
+      background-color: #D5D8DC;
+    }
+  
+    #line {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #time {
+      margin-right: 35px;
+      margin-left: 16px;
+    }
+  
+    #places {
+      padding: 8px;
+      padding-right: 48px;
+      margin-left: -40px;
+      margin-right: -12px;
+    }
+  
+    .button2 {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 32px;
+      background-color: #4340d8;
+      border-radius: 8px;
+      border: #4340d8 solid 2px;
+      width: 130px;
+      margin-top: 16px;
+      margin-left: 3px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 165px;
+    }
+  
+    /* title3 */
+    #titile3 {
+      margin-right: 115px;
+    }
+  }
+  
+  /* XS */
+  @media (max-width: 575px) {
+    .banner {
+      /* The image used */
+      background-image: url("../imgs/imgs-Mytrip/bannerfinal.png");
+      width: 420px;
+      height: 500px;
+    }
+  
+    /* title1 */
+    .underline-title {
+      margin-right: 15px;
+    }
+  
+    .title-home h2 {
+      margin-top: 24px;
+    }
+  
+    #img-content1 {
+      margin-bottom: 8px;
+    }
+  
+    .underline-titlePopular {
+      margin-right: 24px;
+    }
+  
+    .underline-titleHotel {
+      margin-right: 76px;
+    }
+  
+    /* title2 */
+    #titile2 {
+      margin-right: 54px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-bottom: 8px;
+    }
+  
+    h4 {
+      margin-bottom: 0px;
+      font-size: 24px;
+      margin-left: 16px;
+    }
+  
+    #chu {
+      font-size: 16px;
+      color: #737D8C;
+      margin-left: 16px;
+    }
+  
+    #total {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 18px;
+    }
+  
+    #price {
+      font-size: 24px;
+      color: #FF3A44;
+      font-weight: bold;
+      margin-right: 246px;
+    }
+  
+    hr {
+      margin-right: 16px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 16px;
+    }
+  
+    .line {
+      border: 1px solid #D5D8DC;
+      width: 1px;
+      height: 79px;
+      margin-right: 220px;
+      background-color: #D5D8DC;
+    }
+  
+    #line {
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    #time {
+      margin-right: 35px;
+      margin-left: 16px;
+    }
+  
+    #places {
+      padding: 8px;
+      padding-right: 28px;
+      margin-left: -40px;
+      margin-right: -12px;
+    }
+  
+    .button2 {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 32px;
+      background-color: #4340d8;
+      border-radius: 8px;
+      border: #4340d8 solid 2px;
+      width: 360px;
+      margin-top: 16px;
+      margin-left: 16px;
+    }
+  
+    #img2 {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 165px;
+    }
+  
+    #titile3 {
+      margin-right: 56px;
+    }
+  }

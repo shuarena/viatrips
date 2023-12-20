@@ -46,7 +46,6 @@
 
 <body>
   <!-- Navbar -->
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
     <div class="container">
       <span class="icon-menu navbar-toggle-icon d-md-none" onclick="openNav()"></span>
@@ -61,39 +60,21 @@
             <a class="nav-link" href="#">Planning</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Trip</a>
+            <a class="nav-link" href="Mytrip.html">My Trip</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="Blog.html">Blogs</a>
           </li>
         </ul>
       </div>
       <div class="navbar-nav ml-auto ml-md-0">
         <div class="d-flex justify-content-center">
           <a class="nav-link" href="#"><span class="icon-favorite navbar-icon"></span></a>
-          <a class="nav-link" href="#"><span class="icon-user navbar-icon"></span></a>
+          <a class="nav-link" href="Login.html"><span class="icon-user navbar-icon"></span></a>
         </div>
       </div>
     </div>
   </nav>
-
-  <!-- Sidebar -->
-  <div id="overlay" onclick="closeNav()"></div>
-  <div class="sidebar" id="sidebarMobile">
-    <div class="sidebar-content">
-      <div>
-        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><span class="icon-menu-open"></span></a>
-        <a href="javascript:void(0)" onclick="closeNav()"><span class="icon-home sidebar-icon"></span>Tour</a>
-        <a href="javascript:void(0)" onclick="closeNav()"><span
-            class="icon-shopping-list sidebar-icon"></span>Planning</a>
-        <a href="javascript:void(0)" onclick="closeNav()"><span class="icon-ticket sidebar-icon"></span>My Trip</a>
-        <a href="javascript:void(0)" onclick="closeNav()"><span class="icon-blog sidebar-icon"></span>Blogs</a>
-      </div>
-      <a href="Login.html" class="btn btn-outline-primary primary-button d-flex w-100 signin-btn">
-        <span class="icon-login signin-icon"></span>
-        Sign in</a>
-    </div>
-  </div>
 
 
   <!-- Footer -->
@@ -112,8 +93,8 @@
             <div class="card-body">
               <ul class="footer-link-items">
                 <li><a href="#">Our Story</a></li>
-                <li><a href="#">Carrers</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="carrer.html">Carrers</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
                 <li><a href="#">Contact us</a></li>
               </ul>
             </div>
@@ -150,7 +131,7 @@
                 <li><a href="#">Tour booking policy</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
               </ul>
             </div>
           </div>
@@ -163,8 +144,8 @@
           <h4 class="footer-title">About Viatrips</h4>
           <ul class="footer-link-items">
             <li><a href="#">Our Story</a></li>
-            <li><a href="#">Carrers</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="carrer.html">Carrers</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
         </div>
@@ -183,7 +164,7 @@
             <li><a href="#">Tour booking policy</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
           </ul>
         </div>
         <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section ">
@@ -250,21 +231,7 @@
   </footer>
   <!-- Footer -->
 
-  <script>
-    window.intergramId = "Your unique chat id";
-    window.intergramCustomizations = {
-      closedChatAvatarUrl: 'https://www.intergram.xyz/media/demo_avatar.jpg',
-      titleClosed: 'Closed chat title',
-      titleOpen: 'Viatrips',
-      introMessage: 'First message when the user opens the chat for the first time',
-      autoResponse: 'A message that is sent immediately after the user sends its first message',
-      autoNoResponse: 'A message that is sent one minute after the user sends its first message ' +
-        'and no response was received',
-      // mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
-      alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
-    };
-  </script>
-  <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+
 </body>
 
 </html>

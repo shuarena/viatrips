@@ -269,6 +269,9 @@ input:focus {
 
 /* MD */
 @media (min-width: 768px) and (max-width: 991px) {
+  .login-form-content {
+    max-width: 450px;
+  }
   .login-container {
     width: 100%;
     max-width: inherit;
@@ -297,6 +300,9 @@ input:focus {
 
 /* SM */
 @media (min-width: 576px) and (max-width: 767px) {
+  .login-form-content {
+    max-width: 450px;
+  }
   .login-container {
     width: 100%;
     max-width: inherit;
@@ -324,6 +330,9 @@ input:focus {
 }
 /* XS */
 @media (max-width: 575px) {
+  .login-form-content {
+    max-width: 450px;
+  }
   .login-container {
     width: 100%;
     max-width: inherit;
