@@ -1,0 +1,481 @@
+/*Banner1*/
+.banner1-carreer{
+    height: calc(100vh - 4.5rem);
+  background-image: url("../imgs/imgs-Carreer/banner-carreer.png");
+  background-size: cover;
+  background-position: center;
+}
+#input-box1{
+    background-color: none;
+}
+/* title 1 */
+.title-home h2, .title-home h4 {
+    justify-content: center;
+    font-size: 24px;
+    color: #4340d8;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  } 
+  .underline-title {
+    width: 40px;
+    height: 4px;
+    background-color: #FFCA00;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    float: right;
+  }
+   /* content1 */
+   .input-box1, .input-box2, .input-box3,.input-box4{
+    position: relative;
+    height: auto;
+    max-width:100%;
+    width: 100%;
+    background: #fff;
+    margin-top: 0px ;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  .button1{
+    background-color: #ffffff;
+    border: #4340d8 solid 2px;
+    border-radius: 8px;
+    text-align: center;
+    color: #4340d8;
+    margin-left: 48px;  
+  }
+  
+/* content2 */
+   #content2{
+    border-radius: 8px;
+  }
+  h5{
+    text-align: center !important;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: black;
+  }
+/* button show all */
+.primary-button {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid #4340d8;
+  }
+   
+  .show-all-icon {
+    font-size: 24px;
+    padding-left: 4px;
+  }  
+  h6{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  #btn-readmore{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 8px;
+  }
+  .button3{
+    margin: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #4340d8;
+    border-radius:8px ;
+  }
+  h8{
+    font-size: 24px;
+    color:#FF3A44 ;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-left: 40px;
+  
+  }
+  h9{
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  #content3-2 {
+    margin: 0px;
+    margin-top: 16px;
+    padding: 0px;
+  
+  }
+  #content3-3 {
+    margin-top: 0px;
+    padding: 0px;
+  }
+  h10{
+    font-weight: bold;
+    margin-left: 26px;
+  }
+  h11{
+    font-weight: bold;
+    margin-left: 33px;
+  }
+  #content3-5 {
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  #content3-6 {
+    margin-top: 0px;
+    padding: 0px;
+  }
+  h12{
+    font-size: 32px;
+    color:#FF3A44 ;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  h13{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  h14{
+    font-weight: bold;
+    margin-left: 26px;
+    font-size: 20px;
+  }
+  h15{
+    font-weight: bold;
+    margin-left: 33px;
+    font-size: 20px;
+  }
+/*Banner2*/
+  .banner2-carreer{
+    height: calc(100vh - 4.5rem);
+    background-image: url("../imgs/imgs-Carreer/banner2-carreer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 8px;
+  }  
+
+ 
+
+
+ 
+
+
+
+ 
+  /* RESPONSIVE */
+/* XL */
+  @media (min-width: 1200px) {
+    #navbarNav {
+      display: none !important;
+    }
+ /* title1 */    
+    .underline-title {
+      margin-right: 176px;
+    }
+    .button1:hover{
+      background-color: #4340d8;
+      border: #4340d8 solid 2px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      margin-left: 48px;  
+      transition: all ease 0.3s;
+    }
+/* title2 */  
+    #title2 {
+      margin-right: 117px;
+    } 
+    .title-home h4 {
+      margin-top: 32px; 
+    } 
+/* button show all */
+    .primary-button { 
+      margin-left: 474px;
+    }
+    .primary-button:hover {
+      background-color: #4340d8;
+    }
+/* content3*/ 
+    #content3{
+      margin-top: 40px;
+    }
+    h6{
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+/* title3 */  
+    #title3 {
+      margin-right: 159px;
+    }
+  }  
+/* LG */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #navbarNav {
+      display: none !important;
+    }
+/* title1 */  
+    .underline-title {
+      margin-right: 130px;
+    }
+/* content1 */     
+    .button1{
+      margin-left: 27px;
+        
+    }
+    .button1:hover{
+      background-color: #4340d8;
+      border: #4340d8 solid 2px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      transition: all ease 0.3s;
+    }
+/* title2 */  
+    #title2 {
+      margin-right: 72px;
+    } 
+    .title-home h4 {
+      margin-top: 32px; 
+    }
+/* button show all */
+    .primary-button { 
+      margin-left: 380px;
+    }   
+    .primary-button:hover {
+      background-color: #4340d8;
+    }   
+/* content3*/ 
+    #content3{
+      margin-top: 40px;
+    }   
+    h6{
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }  
+    #content3-4{
+      margin-top: 24px;
+      padding: 0px;
+    } 
+/* title3 */  
+    #title3 {
+      margin-right: 115px;
+    } 
+  }
+  
+/* MD */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #navbarNav {
+      display: none !important;
+    }
+/* title1 */  
+    .underline-title {
+      margin-right: 72px;
+    }
+    .title-home h2{
+      margin-top: 32px;
+    }
+/* content1 */    
+    .button1{
+      margin-left: 84px;
+    }
+ /* title2 */  
+    #title2 {
+      margin-right: 10px;
+    } 
+    .title-home h4 {
+      margin-top: 24px; 
+    }  
+    .input-box3, .input-box2{
+      margin-bottom: 18px;
+    }   
+/* button show all */  
+    .primary-button { 
+      margin-left: 238px;
+    }  
+    .primary-button:hover {
+      background-color: white;
+      color: #000000;
+      border: #4340d8 2px solid;
+    }
+/* content3*/ 
+    #content3{
+      margin-top: 32px;
+    }   
+    h6{
+      font-size: 24px;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      text-align: center;
+    }  
+    .button3{
+      margin-left: 40%;
+    }    
+    #content3-4{
+      margin-top: 24px;
+      padding: 0px;
+    } 
+    #content3-4{
+      margin-top: 24px;
+      padding: 0px;
+    }   
+/* title3 */  
+    #title3 {
+      margin-right: 53px;
+    } 
+  }
+  
+/* SM */
+  @media (min-width: 576px) and (max-width: 767px) { 
+/* title1 */ 
+    .underline-title {
+      margin-right:  25px;
+    }
+    .title-home h2{
+      margin-top: 24px;
+    }
+/* content1 */ 
+    .button1{
+      margin-left: 37px;
+    }
+    .input-box1, .input-box2 {
+      height: 230px;
+    }
+/* title2 */  
+    #title2 {
+      margin-right: 50px;
+    } 
+    .title-home h4 {
+      margin-top: 16px; 
+    }  
+    .input-box3, .input-box2{
+      margin-bottom: 18px;
+    }  
+/* button show all */  
+    .primary-button { 
+      margin-left: 172px;
+    } 
+    .primary-button:hover {
+      background-color: white;
+      color: #000000;
+      border: #4340d8 2px solid;
+    } 
+/* content3*/ 
+    #content3{
+      margin-top: 24px;
+    }   
+    h6{
+      font-size: 24px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      text-align: center;
+    }   
+    .button3{
+      margin-left: 36%;
+    } 
+    #content3-4{
+      margin-top: 16px;
+      padding: 0px;
+    }
+    h12{
+      font-size: 32px;
+      color:#FF3A44 ;
+      font-weight: bold;
+      margin-left: 70px;
+    }
+    h13{
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 54px;
+    }
+    h14{
+      font-weight: bold;
+      margin-left: 62px;
+      font-size: 20px;
+    }
+    h15{
+      font-weight: bold;
+      margin-left: 67px;
+      font-size: 20px;
+    } 
+/* title3 */  
+    #title3 {
+      margin-right: 87px;
+    }
+ 
+  }
+/* XS */
+  @media (max-width: 575px) {
+/* title1 */ 
+    .underline-title {
+      margin-right: 65px;
+    }.title-home h2{
+      margin-top: 24px;
+    }
+/* content1 */
+    .button1{
+      margin-left: 100px;
+    }
+/* title2 */  
+    #title2 {
+      margin-right: 33px;
+    } 
+    .title-home h4 {
+      margin-top: 16px; 
+    }  
+    .input-box3, .input-box2, .input-box1{
+      margin-bottom: 18px;
+    }  
+/* button show all */  
+    .primary-button { 
+      margin-left: 105px;
+    } 
+    .primary-button:hover {
+      background-color: white;
+      color: #000000;
+      border: #4340d8 2px solid;
+    } 
+/* content3*/ 
+    #content3{
+      margin-top: 24px;
+    }  
+    h6{
+      font-size: 18px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      text-align: center;
+    }  
+    .button3{
+      margin-left: 33%;
+    } 
+    #content3-4{
+      margin-top: 16px;
+      padding: 0px;
+    } 
+/* title3 */  
+    #title3 {
+      margin-right: 67px;
+    }
+  }

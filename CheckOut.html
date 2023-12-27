@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Check Out</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/CheckOut.css">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- js navbar -->
+  <script>
+    function openNav() {
+      $("#sidebarMobile").css("width", "256px");
+      $("#overlay").css("display", "block");
+    }
+
+    function closeNav() {
+      $("#sidebarMobile").css("width", "0");
+      $("#overlay").css("display", "none");
+      $(".dropdown-mobile a.active").each(function () {
+        $(this).parent().find(".dropdown-mobile-content").fadeOut()
+        $(this).removeClass("active");
+      });
+    }
+
+    $(document).ready(function () {
+      $(".dropdown-mobile a").click(function () {
+        $(this).parent().find(".dropdown-mobile-content").fadeToggle()
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else {
+          $(this).addClass('active');
+        }
+      });
+    });
+    // https://www.w3schools.com/howto/howto_js_countdown.asp
+    // Set the date we're counting down to
+    var addHours = 2 * 60 * 60 * 1000;
+    var countDownDate = new Date().getTime() + addHours;
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for hours, minutes and seconds
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      if (hours < 10) {
+        hours = "0" + hours;
+      }
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      if (minutes < 10) {
+        minutes = "0" + minutes;
+      }
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      if (seconds < 10) {
+        seconds = "0" + seconds;
+      }
+      // Display the result in the element with id="demo"
+      document.getElementById("clock").innerHTML =
+        hours + " : " + minutes + " : " + seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+      }
+    }, 1000);
+  </script>  <!-- js navbar -->
+</head>
+
+<body>
+   <!-- TOP BTN -->
+   <button id="scroll-to-top" title="Go to top"><span class="icon-top-btn"></span></button>
+   <!-- topbtn -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
+    <div class="container">
+      <span class="icon-menu navbar-toggle-icon d-md-none" onclick="openNav()"></span>
+      <a class="navbar-brand navbar-brand-container" href="Home.html"><img src="imgs/logo-viatrips.svg"
+          class="navbar-logo" /></a>
+      <div class="d-none d-md-block mx-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Tour</a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Detail.html">Spring tour</a>
+              <a class="dropdown-item" href="#">Summer tour</a>
+              <a class="dropdown-item" href="#">Autumn tour</a>
+              <a class="dropdown-item" href="#">Winter tour</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Planning</a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="Plan.html">Your plan</a>
+              <a class="dropdown-item" href="#">Suggestion</a>
+              <a class="dropdown-item" href="#">Plan a trip</a>
+            </div>
+          </li>
+          <li class="nav-item align-items-center d-flex">
+            <a class="nav-link" href="Mytrip.html">My Trip</a>
+          </li>
+          <li class="nav-item align-items-center d-flex">
+            <a class="nav-link" href="Blog.html">Blogs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-nav ml-auto ml-md-0">
+        <div class="d-flex justify-content-center">
+          <a class="nav-link" href="#"><span class="icon-favorite navbar-icon"></span></a>
+          <a class="nav-link" href="Login.html"><span class="icon-user navbar-icon"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div id="overlay" onclick="closeNav()"></div>
+  <div class="sidebar" id="sidebarMobile">
+    <div class="sidebar-content">
+      <div>
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><span class="icon-menu-open"></span></a>
+        <a href="Home.html"><span class="icon-home sidebar-icon"></span>Home</a>
+        <div class="dropdown-mobile">
+          <a href="javascript:void(0)" class="dropdown-link"><span class="icon-tour sidebar-icon"></span>Tour</a>
+          <div class="dropdown-mobile-content">
+            <a href="Detail.html">Spring tour</a>
+            <a href="#">Summer tour</a>
+            <a href="#">Autumn tour</a>
+            <a href="#">Winter tour</a>
+          </div>
+        </div>
+        <div class="dropdown-mobile">
+          <a href="javascript:void(0)" class="dropdown-link"><span
+              class="icon-shopping-list sidebar-icon"></span>Planning</a>
+          <div class="dropdown-mobile-content">
+            <a href="Plan.html">Your plan</a>
+            <a href="#">Suggestion</a>
+            <a href="#">Plan a trip</a>
+          </div>
+        </div>
+
+        <a href="Mytrip.html"><span class="icon-ticket sidebar-icon"></span>My Trip</a>
+        <a href="Blog.html"><span class="icon-blog sidebar-icon"></span>Blogs</a>
+      </div>
+      <a href="Login.html" class="btn btn-outline-primary primary-button d-flex w-100 signin-btn">
+        <span class="icon-login signin-icon"></span>
+        Sign in</a>
+    </div>
+  </div>
+    <!-- Navbar -->
+
+  <!--BANNER-->
+    <div class="container-fluid" id="banner1">  
+        <div class="row justify-content-center" id="logo-term">
+            <img src="imgs/imgs-CheckOut/Logo-Term.png" alt="" class="img-fluid">
+        </div>     
+    </div>
+<!------------------------------Breadcrumb------------------------------>
+<nav aria-label="breadcrumb" class="my-3">
+    <div class="container breadcrumb-container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Check Out
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <!-- title -->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Your Information</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+
+    <!---infobox-->
+    <div class="container">
+    <div class="container" >
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 col-12 box-info">
+      <!-- Form -->
+        <div class="form-group">
+          <label id="labelinput-gbk" for="inputFirstname">First name <span class="asterisk"
+              id="asterisk-gbk">*</span></label>
+          <input type="text" class="form-control" id="inputFirstname"
+            placeholder="As in passport or identity card" />
+        </div>
+        <div class="form-group">
+          <label id="labelinput-gbk" for="inputLastname">Last name <span class="asterisk"
+              id="asterisk-gbk">*</span></label>
+          <input type="text" class="form-control" id="inputLastname"
+            placeholder="As in passport or identity card" />
+        </div>
+        <div class="d-flex align-items-center gender-select">
+          <div class="custom-control custom-radio">
+            <input type="radio" id="male" name="gender" class="custom-control-input" />
+            <label class="custom-control-label" for="male" id="labelgender">Male</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="female" name="gender" class="custom-control-input" />
+            <label class="custom-control-label" for="female" id="labelgender">Female</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="other" name="gender" class="custom-control-input" />
+            <label class="custom-control-label" for="other" id="labelgender">Other</label>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group col-12 col-lg-6">
+            <label id="labelinput-gbk" for="inputDob">Day of birth (DD/MM/YYYY)
+              <span class="asterisk" id="asterisk-gbk">*</span></label>
+            <input type="text" class="form-control" id="inputDob" placeholder="__/__/____" />
+          </div>
+          <div class="form-group col-12 col-lg-6">
+            <label id="labelinput-gbk" for="countrySelect">Country <span class="asterisk"
+                id="asterisk-gbk">*</span></label>
+            <select id="countrySelect" class="custom-select">
+              <option selected>Select a country</option>
+              <option value="vn">Viet Nam</option>
+              <option value="us">United State</option>
+              <option value="kr">Korea</option>
+              <option value="ja">Japan</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-12 col-lg-6">
+            <label id="labelinput-gbk" for="inputPhone">Phone number <span class="asterisk"
+                id="asterisk-gbk">*</span></label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text phone-code-select">
+                  <img src="imgs/vn-icon.svg" />
+                  <span class="phone-code">+84</span>
+                  <span class="icon-arrowline-down"></span>
+                </div>
+              </div>
+              <div class="separator"></div>
+              <input type="text" class="form-control" id="inputPhone" placeholder="Phone number"
+                aria-describedby="phone-code" />
+            </div>
+          </div>
+          <div class="form-group col-12 col-lg-6">
+            <label id="labelinput-gbk" for="inputEmail">Email</label>
+            <input type="text" class="form-control" id="inputEmail" placeholder="Please fill in email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label id="labelinput-gbk" for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Please fill in your address" />
+        </div>
+        <button type="button" class="btn btn-primary primary-button border-0 w-100 submit-btn">
+          Confirm
+        </button>
+      </div>
+                    <!--product-->
+             <!-- product card 2 -->
+      <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12">
+        <div class="product-container">
+          <div class="product-image">
+            <img src="imgs/Product-CheckOut.png" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              Da Nang - Ba Na - Golden Bridge - Son Tra - My Khe Beach - Hoi
+              An - Da Nang - Free tickets to Hoi An Memory Show + Hotel 4 star
+            </div>
+            <div class="review-star">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
+            <div class="tour-code">
+              <span class="tour-code-title">Tour code:</span>
+              NDSGN3021123VN-Vt
+            </div>
+            <div class="departure">
+              <span class="departure-title">Departure place:</span>
+              Ho Chi Minh City
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+    </div>
+    </div>
+  
+
+  <!-- content -->
+  <!-- title -->
+  <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Booking Summary</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+
+  
+  <div class="container" id="tourinfofill">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="content-container">
+          <!-- Tour Info -->
+          <div class="tour-info">
+            <div class="d-flex align-items-center check-in-out">
+              <div class="flex-fill check-in">
+                <span class="sub-title">Check-in</span>
+                <h3 class="date">Thu, Jan 25</h3>
+                <span class="time">3:00 PM</span>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="flex-fill check-out">
+                <span class="sub-title">Check-out</span>
+                <h3 class="date">Sun, Jan 28</h3>
+                <span class="time">1:00 PM</span>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-tour tour-info-icon"></span>
+              <div class="tour-name flex-fill">
+                Special lunar new year tour:
+                <h3>DA NANG - HOI AN - HUE</h3>
+              </div>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-plane tour-info-icon"></span>
+              <div class="tour-name">Plane:</div>
+              <h3 class="flex-fill text-center ticket-value px-2">4 tickets
+              </h3>
+              <span class="priceoftour">405.56$</span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-bed tour-info-icon"></span>
+              <div class="tour-name">Hotel:</div>
+              <h3 class="flex-fill text-center ticket-value px-2">4 people
+              </h3>
+              <span class="priceoftour">396.22$</span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-food tour-info-icon"></span>
+              <div class="tour-name">Meals:</div>
+              <h3 class="flex-fill text-center ticket-value px-2">4 people
+              </h3>
+              <span class="priceoftour">261.92$</span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-ticket tour-info-icon"></span>
+              <div class="tour-name">Services:</div>
+              <h3 class="flex-fill text-center ticket-value px-2">4 people
+              </h3>
+              <span class="priceoftour">167.78$</span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="d-flex align-items-center">
+              <span class="icon-dollar tour-info-icon-new"></span>
+              <div class="tour-name-new">Charge</div>
+              <h3 class="flex-fill text-center ticket-value px-2">
+              </h3>
+              <span class="priceoftour">25$</span>
+            </div>
+            <br>
+            <div class="d-flex align-items-center">
+              <span class="icon-badge-discount tour-info-icon-new"></span>
+              <div class="tour-name-new">Discount</div>
+              <h3 class="flex-fill text-center ticket-value px-2">
+              </h3>
+              <span class="priceoftour-discount">-40$</span>
+            </div>
+            <br>
+            <div class="d-flex align-items-center">
+              <span class="icon-shopping-list tour-info-icon-new"></span>
+              <div class="tour-name-new">Total</div>
+              <h3 class="flex-fill text-center ticket-value px-2">
+              </h3>
+              <span class="priceoftour-total">1249.48$</span>
+            </div>
+          </div>
+    </div>
+    </div>
+    <div class="col-12 col-lg-4  flex-column">
+      <div class="content-container bill-container">
+        <div class="bill-content">
+          <h4 class="bill-title">Your bill</h4>
+          <div class="d-flex align-items-center price-container">
+            <span class="icon-tour left-icon"></span>
+            <div class="d-flex flex-column flex-fill">Tour ticket:</div>
+            <span class="price-item">206,48$</span>
+          </div>
+          <div class="d-flex align-items-center price-container">
+            <span class="icon-ticket left-icon"></span>
+            <div class="d-flex flex-column flex-fill">Plane ticket:</div>
+            <span class="price-item">101,39$</span>
+          </div>
+          <div class="d-flex align-items-center price-container">
+            <span class="icon-bed left-icon"></span>
+            <div class="d-flex flex-column flex-fill">Hotel:</div>
+            <span class="price-item">10,23$</span>
+          </div>
+        </div>
+        <div class="horizontal-line my-0"></div>
+        <br>
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between price-total-container">
+            <span class="total-text">Total</span>
+            <span class="total-price">1219,48$</span>
+          </div>
+        </div>
+        <br>
+          <div class="horizontal-line my-0"></div>
+          <div class="container">
+            <br>
+          <h4 class="bill-title">Choose How To Pay</h4>
+          <br>
+          <form>
+            <input type="radio" id="html" name="fav_language" value="HTML" class="custom-control-input1">
+            <label for="html" class="custom-control-label1" id="labelgender">Book Now, Pay Later</label>
+            <br>
+            <br>
+            <input type="radio" id="css" name="fav_language" value="CSS" class="custom-control-input1">
+            <label for="css" class="custom-control-label1" id="labelgender" >Domestic Card Payment</label>
+            <br>
+            <br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript" class="custom-control-input1">
+            <label for="javascript" class="custom-control-label1" id="labelgender" >International Card Payment</label>
+            <br>
+        </form>
+        <br>
+        
+          
+        <a href="Payment.html" alt=""><button class="btn btn-primary primary-button border-0 w-100 payment-btn">
+          Payment
+        </button></a>
+        <div class="bill-note">
+          You need to fill in all the information before making the
+          payment.
+        </div>
+        <div class="clock-container d-flex align-items-center justify-content-between">
+          This link will close in:
+          <div class="clock" id="clock">00 : 00 : 00</div>
+        </div>
+          </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--bill-->
+    
+    </div>
+  </div>
+</div>
+
+
+ 
+   
+  <!--BANNER2-->
+  <div class="container-fluid" id="banner2">  
+    </div>     
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="d-md-none">
+      <div id="footerCollapse">
+        <div class="card">
+          <div class="card-header" id="AboutViatrips">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
+              aria-expanded="true" aria-controls="aboutViatrips">
+              About Viatrips
+            </button>
+          </div>
+
+          <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="carrer.html">Carrers</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingExplore">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
+              aria-controls="explore">
+              Explore
+            </button>
+          </div>
+          <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Airplane ticket</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Group booking</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInformation">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
+              aria-controls="information">
+              Information
+            </button>
+          </div>
+          <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Tour booking policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="TermsOfUse.html">Terms of Use</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">About Viatrips</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="carrer.html">Carrers</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Airplane ticket</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Group booking</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Tour booking policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="TermsOfUse.html">Terms of Use</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section ">
+          <h4 class="footer-title">Social media</h4>
+          <div class="d-flex">
+            <a href="#"><span class="icon-facebook social-icon"></span></a>
+            <a href="#"><span class="icon-instagram social-icon"></span></a>
+            <a href="#"><span class="icon-youtube social-icon"></span></a>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="icon-discord social-icon"></span></a>
+            <a href="#"><span class="icon-tiktok social-icon"></span></a>
+            <a href="#"><span class="icon-twitter social-icon"></span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-5 d-block d-md-none social-section ">
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-facebook social-icon"></span></a>
+                <a href="#"><span class="icon-instagram social-icon"></span></a>
+                <a href="#"><span class="icon-youtube social-icon"></span></a>
+              </div>
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-discord social-icon"></span></a>
+                <a href="#"><span class="icon-tiktok social-icon"></span></a>
+                <a href="#"><span class="icon-twitter social-icon"></span></a>
+              </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-12 ">
+              <h4 class="footer-title">Payment</h4>
+              <div class="d-flex flex-wrap">
+                <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 ">
+              <div class="input-group email-address">
+                <input placeholder="Enter Email Address" class="form-control email-input" />
+                <span class="input-group-append right-icon-container">
+                  <button class="btn border-0 text-white send-btn" type="button">
+                    <span class="icon-send send-icon"></span>
+                  </button>
+                </span>
+              </div>
+              <div class="receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <span class="checkmark"></span>
+                Yes, i want to receive news and products emails. Please read our
+                <a href="#">privacy policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright text-center">
+      Copyright © 2023 Viatrips. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- chatbox -->
+  <button class="chatbox-open">
+    <img src="imgs/avatar-viatrips.svg" class="img-fluid">
+  </button>
+  <button class="chatbox-close">
+    <span class="icon-closelight icon-chatbox"></span></button>
+  <section class="chatbox-popup">
+    <header class="chatbox-popup__header">
+      <aside style="flex:2">
+        <img src="imgs/avatar3-viatrips.svg" class="img-fluid">
+      </aside>
+      <aside style="flex:8">
+        <div class="row">
+          <h1 class="mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span class="path1"></span><span
+              class="path2"></span><span class="path3"></span></span>
+        </div>
+        <span class="ml-1">Staff (Online)</span>
+      </aside>
+      <aside style="flex:1">
+        <button class="chatbox-maximize"><span class="icon-select-window  icon-chatbox"></span></button>
+      </aside>
+    </header>
+    <main class="chatbox-popup__main">
+      <h5>15:30</h5>
+          <div id="message-chatbox">
+            <span>Hi there!<br>
+              Welcome to Viatrips's services. Please choose your desired departure point?</span>
+          </div>
+      </div>
+    </main>
+    <footer class="chatbox-popup__footer">
+
+      <aside style="flex:20">
+        <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+      </aside>
+      <aside style="flex:1;color:#888;text-align:center;">
+        <span class="icon-send icon-chatbox" style="color:#4340D8"></span>
+      </aside>
+    </footer>
+  </section>
+  <section class="chatbox-panel">
+    <header class="chatbox-panel__header">
+      <aside style="flex:2">
+        <img src="imgs/avatar2-viatrips.svg" class="img-fluid">
+      </aside>
+      <aside style="flex:6">
+        <div class="row">
+          <h1 class="mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span class="path1"></span><span
+              class="path2"></span><span class="path3"></span></span>
+        </div>
+        <span class="ml-1">Staff (Online)</span>
+      </aside>
+      <aside style="flex:3;text-align:right;">
+        <button class="chatbox-minimize"><span class="icon-select-window icon-chatbox"></span></button>
+        <button class="chatbox-panel-close"><span class="icon-closelight icon-chatbox"></span></button>
+      </aside>
+    </header>
+    <main class="chatbox-panel__main" style="flex:1">
+      <h5>15:30</h5>
+      <div id="message-chatbox">
+        <span>Hi there!<br>
+          Welcome to Viatrips's services. Please choose your desired departure point?</span>
+      </div>
+
+    <div id="message-btn-box">
+      <button class="btn primary-button" id="message-btn">The North</button>
+      <button class="btn primary-button" id="message-btn">The Central</button>
+      <button class="btn primary-button" id="message-btn">The South</button>
+  </div>
+    </main>
+    <footer class="chatbox-panel__footer">
+
+      <aside style="flex:15">
+        <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+      </aside>
+      <aside style="flex:1;color:#888;text-align:center;">
+        <span class="icon-send icon-chatbox" style="color: #4340D8;"></span>
+      </aside>
+    </footer>
+  </section> <!-- chatbox -->
+
+
+<!-- js chatbox -->
+  <script>
+    const chatbox = jQuery.noConflict();
+
+    chatbox(() => {
+      chatbox(".chatbox-open").click(() =>
+        chatbox(".chatbox-popup, .chatbox-close").fadeIn()
+      );
+
+      chatbox(".chatbox-close").click(() =>
+        chatbox(".chatbox-popup, .chatbox-close").fadeOut()
+      );
+
+      chatbox(".chatbox-maximize").click(() => {
+        chatbox(".chatbox-popup, .chatbox-open, .chatbox-close").fadeOut();
+        chatbox(".chatbox-panel").fadeIn();
+        chatbox(".chatbox-panel").css({ display: "flex" });
+      });
+
+      chatbox(".chatbox-minimize").click(() => {
+        chatbox(".chatbox-panel").fadeOut();
+        chatbox(".chatbox-popup, .chatbox-open, .chatbox-close").fadeIn();
+      });
+
+      chatbox(".chatbox-panel-close").click(() => {
+        chatbox(".chatbox-panel").fadeOut();
+        chatbox(".chatbox-open").fadeIn();
+      });
+    });
+  </script>  <!-- js chatbox -->
+
+
+<!-- js top btn -->
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $("#scroll-to-top").fadeIn();
+    } else {
+      $("#scroll-to-top").fadeOut();
+    }
+  });
+
+  $("#scroll-to-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+  });
+</script> <!-- js top btn -->
+
+
+</body>
+
+</html>
+
+

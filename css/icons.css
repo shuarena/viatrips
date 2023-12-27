@@ -10,6 +10,7 @@
   font-display: block;
 }
 
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'viatrips' !important;
@@ -25,6 +26,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-top-btn:before {
+  content: "\e95c";
+}
+.icon-select-window:before {
+  content: "\e958";
+}
+.icon-tick .path1:before {
+  content: "\e959";
+  color: rgb(255, 255, 255);
+}
+.icon-tick .path2:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-tick .path3:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(56, 152, 255);
+}
 .icon-login:before {
   content: "\e929";
 }
@@ -305,3 +326,4 @@
 .icon-alarm:before {
   content: "\e94c";
 }
+

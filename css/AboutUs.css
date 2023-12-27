@@ -15,23 +15,44 @@
     margin: 0 auto; /* Canh giữa hình ảnh trong phần tử cha */
 }
 /* breadcum */
-#breadcrumb {
-    margin-top: 16px;
+/* breadcrumb */
+.breadcrumb-container .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    padding-left: -15px;
+    padding-right: -15px;
+    font-size: 14px;
   }
-  #breadcrumb a {
-    font-size: 24px;
-    margin-top: 16px;
-    color:#ABB1BA;
-    margin-right: 8px;
+  
+  .breadcrumb-container .breadcrumb-item {
+    align-items: center;
+    display: flex;
   }
-  .Contentbreadcrumb-aboutus{
-    font-size: 16px;
-  }
-  #breadcrumb a:hover {
+  
+  .breadcrumb-item > a {
+    color: #5C6470;
     text-decoration: none;
   }
-  .icon-arrowline-right{
-    font-size: 24px !important;
+  .breadcrumb-item > a:hover {
+    color: #4340d8;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-icon {
+    font-size: 24px;
+    display: block;
+  }
+  
+  .breadcrumb-container .breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 8px;
+    color: #5C6470;
+    content: "\e947";
+    font-family: "viatrips";
+    font-size: 16px;
+  }
+  
+  .breadcrumb-item.active > a {
+    color: #8F97A3;
   }
 /* title 1 */
 .titleWhoWeAre h2{
@@ -243,23 +264,14 @@
     font-weight: bold;
     color: #000000;
     border: 2px solid #4340d8;
+    height: 48px;
+    padding-top: 11px;
   }
-  
-  .primary-button:hover {
-    background-color: white;
-    border: 2px solid #FFCA00;
-    color: #000000;
-  }
-  
   .show-all-icon {
     font-size: 24px;
     padding-left: 4px;
   }
 /* Content Our */
-.ContentOur{
-    margin-top: 8px;
-    padding-top: 16px;
-}
 /* Partner */
 .imgPartner img{
     max-width: 350px;
@@ -269,10 +281,31 @@
 
 /* XL */
 @media (min-width:1200px) {
-
+    .btncontactus-FAQs:hover{
+        background-color: #FFCA00;
+        color: #000000;
+        transition: all ease 0.3s;
+      }
+      .primary-button:hover {
+        background-color: white;
+        border: 2px solid #FFCA00;
+        color: #000000;
+        transition: all ease 0.3s;
+      }
 }
 /* LG */
 @media (min-width:992px) and (max-width:1199px) {
+    .primary-button:hover {
+        background-color: white;
+        border: 2px solid #FFCA00;
+        color: #000000;
+        transition: all ease 0.3s;
+      }
+    .btncontactus-FAQs:hover{
+        background-color: #FFCA00;
+        color: #000000;
+        transition: all ease 0.3s;
+      }
     .underline-titleWhoWeAre {
         margin-right: 140px;
     }/* Title Blog Detail */ 
@@ -399,6 +432,11 @@
         width: 100%;
         height: auto;
     }
+    .primary-button:hover {
+        background-color: #F9F9F9;
+        border: 2px solid #4340D8;
+        color: #000000;
+      }
 }
 /* SM */
 @media (min-width:576px) and (max-width:767px) {
@@ -475,6 +513,11 @@
         max-width: 150px;
         width: 100%;
         height: auto;
+    }
+    .primary-button:hover {
+        background-color: #F9F9F9;
+        border: 2px solid #4340D8;
+        color: #000000;
     }
     
     
@@ -556,6 +599,11 @@
         max-width: 110px;
         width: 100%;
         height: auto;
+    }
+    .primary-button:hover {
+        background-color: #F9F9F9;
+        border: 2px solid #4340D8;
+        color: #000000;
     }
 }
   /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */

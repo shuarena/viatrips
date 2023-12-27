@@ -350,7 +350,7 @@ input:focus {
 .chat-tour-info {
   border-radius: 8px;
   background: #ececfb;
-  padding: 24px;
+  padding: 20px;
   color: #737d8c;
   font-size: 16px;
   display: flex;
@@ -488,10 +488,14 @@ input:focus {
   font-size: 16px;
   font-weight: 700;
 }
-
-.clock-container .clock {
+.clock-title{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.clock {
   color: #ff3a44;
-  font-size: 24px;
+  font-size: 28px;
+  padding-right: 0px;
 }
 
 .plan-banner {
@@ -548,10 +552,7 @@ input:focus {
   min-width: 210px;
 }
 
-.plan-banner .plan-btn:hover {
-  background: #ffca00;
-  color: black;
-}
+
 
 #essential .carousel-control {
   width: unset;
@@ -602,6 +603,7 @@ input:focus {
     color: black;
     border: 2px solid #ffca00;
     transition: all ease 0.5s;
+    text-decoration: none;
   }
   .plan-reminder-btn:hover {
     background-color: #ffca00;
@@ -623,6 +625,12 @@ input:focus {
   .breadcrumb-item > a:hover {
     color: #4340d8;
     text-decoration: none;
+  }
+  .plan-banner .plan-btn:hover {
+    background: #ffca00;
+    color: black;
+    text-decoration: none;
+    transition: all ease 0.5s;
   }
 }
 
@@ -638,6 +646,7 @@ input:focus {
     color: black;
     border: 2px solid #ffca00;
     transition: all ease 0.5s;
+    text-decoration: none;
   }
   .plan-reminder-btn:hover {
     background-color: #ffca00;
@@ -660,6 +669,12 @@ input:focus {
     color: #4340d8;
     text-decoration: none;
   }
+  .plan-banner .plan-btn:hover {
+    background: #ffca00;
+    color: black;
+    text-decoration: none;
+    transition: all ease 0.5s;
+  }
 }
 
 /* MD */
@@ -669,6 +684,26 @@ input:focus {
   }
   .detailbox-gbk {
     margin-bottom: 32px;
+  }
+  .makeaplan-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid #4340d8;
+    text-decoration: none;
+  }
+  .plan-reminder-btn:hover {
+    background-color: #4340d8;
+    border: 2px solid #4340d8;
+    color: white;
+  }
+  .payment-btn:hover {
+    background: #4340d8;
+    color: white;
+  }
+  .plan-banner .plan-btn:hover {
+    background: #4340d8;
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -680,6 +715,26 @@ input:focus {
   .detailbox-gbk {
     margin-bottom: 24px;
   }
+  .makeaplan-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid #4340d8;
+    text-decoration: none;
+  }
+  .plan-reminder-btn:hover {
+    background-color: #4340d8;
+    border: 2px solid #4340d8;
+    color: white;
+  }
+  .payment-btn:hover {
+    background: #4340d8;
+    color: white;
+  }
+  .plan-banner .plan-btn:hover {
+    background: #4340d8;
+    color: white;
+    text-decoration: none;
+  }
 }
 /* XS */
 @media (max-width: 575px) {
@@ -688,5 +743,25 @@ input:focus {
   }
   .detailbox-gbk {
     margin-bottom: 24px;
+  }
+  .makeaplan-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid #4340d8;
+    text-decoration: none;
+  }
+  .plan-reminder-btn:hover {
+    background-color: #4340d8;
+    border: 2px solid #4340d8;
+    color: white;
+  }
+  .payment-btn:hover {
+    background: #4340d8;
+    color: white;
+  }
+  .plan-banner .plan-btn:hover {
+    background: #4340d8;
+    color: white;
+    text-decoration: none;
   }
 }

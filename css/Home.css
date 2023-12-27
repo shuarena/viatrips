@@ -2,7 +2,7 @@
 .banner1-home {
   min-height: 400px;
   height: 80vh;
-  background-image: url("../imgs/banner1-home.png");
+  background-image: url("../imgs/banner1-home.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -13,6 +13,17 @@
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 20px;
+}
+.btnbanner-home {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 10px 8px;
+  color: #fff;
+  background-color: #4340d8;
+  border: solid 2px #4340d8;
+  width: 100%;
+  flex: 0;
 }
 
 /* Search box */
@@ -42,8 +53,6 @@
   border-top-right-radius: 12px;
   overflow: hidden;
 }
-
-
 
 .search-box .tab-item.active {
   background-color: #fff;
@@ -93,7 +102,6 @@
   border-radius: 8px;
   text-decoration: none;
 }
-
 
 .search-button .icon-Search {
   font-size: 24px;
@@ -202,11 +210,10 @@
   border-radius: 8px;
   padding: 12px 20px;
   border: 2px solid #4340d8;
-  color: #4340d8;
+  color: black;
   font-size: 16px;
   font-weight: 700;
 }
-
 
 .product-container .book-now {
   justify-content: center;
@@ -221,8 +228,6 @@
   font-weight: 700;
 }
 
-
-
 .compare-container {
   margin-top: 8px;
   color: #4340d8;
@@ -234,7 +239,7 @@
   margin-right: 4px;
 }
 
-#addtocompare-icon{
+#addtocompare-icon {
   font-size: 24px;
   color: #4340d8;
   margin-right: 4px;
@@ -250,8 +255,6 @@
   justify-content: center;
 }
 
-
-
 .show-all-icon {
   font-size: 24px;
   padding-left: 8px;
@@ -264,6 +267,7 @@
   border-radius: 100px;
   vertical-align: center;
   padding: 8px;
+  z-index: 8888;
 }
 
 .big-deals-container {
@@ -277,8 +281,8 @@
 }
 
 .row {
-  display: flex; 
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .destination-container,
@@ -291,8 +295,6 @@
   margin-bottom: 12px;
 }
 
-
-
 .destination-image,
 .inspiration-image {
   width: 100%;
@@ -301,7 +303,6 @@
   position: absolute;
   flex-shrink: 0;
 }
-
 
 .destination-content,
 .inspiration-content {
@@ -350,8 +351,6 @@
   color: black;
   border: 2px solid #4340d8;
 }
-
-
 
 .trip-planner-item {
   width: 100%;
@@ -402,8 +401,8 @@
 .feature-title {
   font-size: 20px;
   font-weight: 700;
-  margin-top: 8px;
-  color: #4340d8;
+  margin-top: 20px;
+  color: black;
 }
 
 .feature-description {
@@ -411,8 +410,8 @@
   margin-top: 8px;
 }
 
-.feadback-container {
-  background-color: #f5f5f5;
+/* feedback's customers */
+.feedback-container {
   width: 100%;
   height: 408px;
   display: flex;
@@ -436,7 +435,6 @@
   padding-top: 1px;
 }
 
-
 .feedback-2 {
   height: 360px;
 }
@@ -445,13 +443,18 @@
   height: 312px;
 }
 
+.feedback-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4340d8;
+}
 .feedback-content {
   position: absolute;
   left: 16px;
   right: 16px;
   bottom: 16px;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12.5px);
   text-align: center;
@@ -514,23 +517,23 @@
   color: dimgrey;
   box-sizing: content-box;
 }
-.card-title{
+.card-title {
   font-size: 16px;
-  color:white;
-  background-color: #4340D8;
+  color: white;
+  background-color: #4340d8;
   padding: 8px 12px;
   border-radius: 8px;
   display: inline-block;
   font-weight: 700;
 }
-.card-text{
+.card-text {
   font-size: 20px;
   line-height: 22px;
   font-weight: bold;
   color: black;
   margin-bottom: 4px;
 }
-.card-text2{
+.card-text2 {
   font-size: 20px;
   line-height: 22px;
   font-weight: bold;
@@ -538,53 +541,53 @@
   margin-bottom: 8px;
   margin-top: 32px;
 }
-.cost{
+.cost {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
-  color:#FF3A44;
+  color: #ff3a44;
   margin-bottom: 0px;
 }
-.person{
+.person {
   font-size: 16px;
   line-height: 18px;
-  color:black;
+  color: black;
   margin-top: 0px;
 }
-.Starr{
-  color:#FFCA00;
+.Starr {
+  color: #ffca00;
   font-size: 24px;
 }
-.toiyeucode{
+.toiyeucode {
   font-size: 16px;
   line-height: 18px;
-  color: #8F97A3;
+  color: #8f97a3;
   margin-bottom: 4px;
 }
-.toiyeucodee{
+.toiyeucodee {
   font-size: 16px;
   line-height: 18px;
-  color: #8F97A3;
+  color: #8f97a3;
   margin-bottom: 58px;
 }
-.finaltext{
+.finaltext {
   font-size: 16px;
   line-height: 18px;
-  color: #8F97A3;
+  color: #8f97a3;
   margin-top: 4px;
 }
-.Location{
+.Location {
   font-size: 24px;
-  color:#5C6470;
+  color: #5c6470;
   margin-top: 32px;
 }
-.contentlocation{
+.contentlocation {
   font-size: 16px;
   line-height: 18px;
-  color:#5C6470;
+  color: #5c6470;
 }
 .vl {
-  border-left: 1px solid #ABB1BA;
+  border-left: 1px solid #abb1ba;
   height: 198px;
   margin-top: 24px;
 }
@@ -597,28 +600,27 @@
 
 .Body-ngang {
   display: flex;
-  justify-content: space-between;;
+  justify-content: space-between;
 }
-.line{
+.line {
   max-width: 1%;
 }
 .cta-section {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  
 }
 .BuyNow {
   font-size: 16px;
   font-weight: 700;
   border-radius: 8px;
   padding: 10px 8px;
-  color:black;
-  border: solid 2px #4340D8;
+  color: black;
+  border: solid 2px #4340d8;
   width: 100%;
 }
 .BuyNow:hover {
-  border: solid 2px #FFCA00;
+  border: solid 2px #ffca00;
   background-color: white;
   color: black;
   transition: all ease 0.5s;
@@ -628,27 +630,26 @@
   font-weight: 700;
   border-radius: 8px;
   padding: 10px 8px;
-  color:#fff;
-  background-color: #4340D8;
-  border: solid 2px #4340D8;
+  color: #fff;
+  background-color: #4340d8;
+  border: solid 2px #4340d8;
   width: 100%;
   margin: 0px;
 }
 
-
-.addtocompare-icon{
+.addtocompare-icon {
   display: flex;
   margin-top: 6px;
-  color: #4340D8;
+  color: #4340d8;
   font-size: 24px;
   float: right;
 }
-#Addtocompare{
+#Addtocompare {
   font-size: 14px;
   font-weight: 500;
   margin-top: 8px;
   display: flex;
-  color:#4340D8;
+  color: #4340d8;
   margin-bottom: 0px;
   float: right;
 }
@@ -662,12 +663,13 @@
   }
   .banner2-home {
     margin-top: 40px;
+    z-index: 7777;
   }
-  .feedback-home{
+  .feedback-home {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .gallery-home{
+  .gallery-home {
     margin-bottom: 40px;
   }
   .search-box .tab-item:hover {
@@ -705,7 +707,7 @@
     transition: all ease 0.5s;
   }
   .button-borderless:hover {
-    color: #4340d8 ;
+    color: #4340d8;
     transition: all ease 0.5s;
   }
   .card-text2 {
@@ -717,15 +719,27 @@
     margin-top: 42px;
   }
   .BookNow:hover {
-    background-color: #FFCA00;
+    background-color: #ffca00;
     color: black;
-    border: solid 2px #FFCA00;
+    border: solid 2px #ffca00;
     transition: all ease 0.5s;
   }
   .BookNow:hover {
-    background-color: #FFCA00;
+    background-color: #ffca00;
     color: black;
-    border: solid 2px #FFCA00;
+    border: solid 2px #ffca00;
+    transition: all ease 0.5s;
+  }
+  .bannercontent-home {
+    height: 140px;
+  }
+  .bannercontentbox-home {
+    margin-bottom: 80px;
+  }
+  .btnbanner-home:hover {
+    background-color: #ffca00;
+    border: solid 2px #ffca00;
+    color: black;
     transition: all ease 0.5s;
   }
 }
@@ -735,14 +749,14 @@
   #navbarNav {
     display: none !important;
   }
-  .banner2-home{
+  .banner2-home {
     margin-top: 40px;
   }
-  .feedback-home{
+  .feedback-home {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .gallery-home{
+  .gallery-home {
     margin-bottom: 40px;
   }
   .search-box .tab-item:hover {
@@ -780,13 +794,25 @@
     transition: all ease 0.5s;
   }
   .button-borderless:hover {
-    color: #4340d8 ;
+    color: #4340d8;
     transition: all ease 0.5s;
   }
   .BookNow:hover {
-    background-color: #FFCA00;
+    background-color: #ffca00;
     color: black;
-    border: solid 2px #FFCA00;
+    border: solid 2px #ffca00;
+    transition: all ease 0.5s;
+  }
+  .bannercontent-home {
+    height: 130px;
+  }
+  .bannercontentbox-home {
+    margin-bottom: 100px;
+  }
+  .btnbanner-home:hover {
+    background-color: #ffca00;
+    border: solid 2px #ffca00;
+    color: black;
     transition: all ease 0.5s;
   }
 }
@@ -799,14 +825,14 @@
   .primary-button {
     width: 50%;
   }
-  .banner2-home{
+  .banner2-home {
     margin-top: 32px;
   }
-  .feedback-home{
+  .feedback-home {
     margin-top: 32px;
     margin-bottom: 32px;
   }
-  .gallery-home{
+  .gallery-home {
     margin-bottom: 32px;
   }
   .search-box .tab-item:hover {
@@ -830,6 +856,19 @@
     background-color: rgba(0, 0, 0, 0);
     border: solid 2px #4340d8;
     color: black;
+  }
+  .bannercontent-home {
+    height: 100px;
+  }
+  .bannercontentbox-home {
+    margin-bottom: 20px;
+    flex: 0;
+  }
+  .btnbanner-home:hover {
+    background-color: #4340d8;
+    border: solid 2px #4340d8;
+    color: white;
+    transition: all ease 0.5s;
   }
 }
 
@@ -838,19 +877,19 @@
   .primary-button {
     width: 100%;
   }
-  .banner2-home{
+  .banner2-home {
     margin-top: 24px;
   }
-  .feedback-home{
+  .feedback-home {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  .gallery-home{
+  .gallery-home {
     margin-bottom: 24px;
   }
   .search-box .tab-item:hover {
     text-decoration: none;
-  } 
+  }
   .product-container .other-days:hover {
     background-color: rgba(red, 0, 0, 0);
     text-decoration: none;
@@ -865,16 +904,25 @@
   .trip-planner .tab-item:hover {
     text-decoration: none;
   }
-  .card-title{
+  .card-title {
     margin-top: 16px;
   }
-  .Buy-cardngang{
+  .Buy-cardngang {
     margin-top: 16px;
   }
   .primary-button:hover {
     background-color: rgba(0, 0, 0, 0);
     border: solid 2px #4340d8;
     color: black;
+  }
+  .feedback-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannercontent-home {
+    height: 90px;
+    margin-bottom: 60px;
   }
 }
 /* XS */
@@ -882,14 +930,14 @@
   .primary-button {
     width: 100%;
   }
-  .banner2-home{
+  .banner2-home {
     margin-top: 24px;
   }
-  .feedback-home{
+  .feedback-home {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  .gallery-home{
+  .gallery-home {
     margin-bottom: 24px;
   }
   .search-box .tab-item:hover {
@@ -909,10 +957,10 @@
   .trip-planner .tab-item:hover {
     text-decoration: none;
   }
-  .card-title{
+  .card-title {
     margin-top: 16px;
   }
-  .Buy-cardngang{
+  .Buy-cardngang {
     margin-top: 16px;
   }
   .primary-button:hover {
@@ -920,5 +968,13 @@
     border: solid 2px #4340d8;
     color: black;
   }
+  .feedback-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannercontent-home {
+    height: 80px;
+    margin-bottom: 30px;
+  }
 }
-

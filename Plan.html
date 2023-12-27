@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Plan</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/Plan.css" />
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- js navbar -->
+  <script>
+    function openNav() {
+      $("#sidebarMobile").css("width", "256px");
+      $("#overlay").css("display", "block");
+    }
+
+    function closeNav() {
+      $("#sidebarMobile").css("width", "0");
+      $("#overlay").css("display", "none");
+      $(".dropdown-mobile a.active").each(function () {
+        $(this).parent().find(".dropdown-mobile-content").fadeOut()
+        $(this).removeClass("active");
+      });
+    }
+
+    $(document).ready(function () {
+      $(".dropdown-mobile a").click(function () {
+        $(this).parent().find(".dropdown-mobile-content").fadeToggle()
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else {
+          $(this).addClass('active');
+        }
+      });
+    });
+  </script>  <!-- js navbar -->
+  <script>
+    $(function () {
+  
+  var activeIndex = $('.active-tab').index(),
+    $contentlis = $('.tabs-content li'),
+    $tabslis = $('.tabs li');
+  
+  // Show content of active tab on loads
+  $contentlis.eq(activeIndex).show();
+  
+  $('.tabs').on('click', 'li', function (e) {
+  var $current = $(e.currentTarget),
+      index = $current.index();
+  
+  $tabslis.removeClass('active-tab');
+  $current.addClass('active-tab');
+  $contentlis.hide().eq(index).show();
+  });
+  });
+  </script>
+  
+</head>
+
+<body>
+    <!-- TOP BTN -->
+    <button id="scroll-to-top" title="Go to top"><span class="icon-top-btn"></span></button>
+    <!-- topbtn -->
+ 
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-container">
+     <div class="container">
+       <span class="icon-menu navbar-toggle-icon d-md-none" onclick="openNav()"></span>
+       <a class="navbar-brand navbar-brand-container" href="Home.html"><img src="imgs/logo-viatrips.svg"
+           class="navbar-logo" /></a>
+       <div class="d-none d-md-block mx-auto">
+         <ul class="navbar-nav">
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Tour</a>
+ 
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="Detail.html">Spring tour</a>
+               <a class="dropdown-item" href="#">Summer tour</a>
+               <a class="dropdown-item" href="#">Autumn tour</a>
+               <a class="dropdown-item" href="#">Winter tour</a>
+             </div>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Planning</a>
+ 
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="Plan.html">Your plan</a>
+               <a class="dropdown-item" href="#">Suggestion</a>
+               <a class="dropdown-item" href="#">Plan a trip</a>
+             </div>
+           </li>
+           <li class="nav-item align-items-center d-flex">
+             <a class="nav-link" href="Mytrip.html">My Trip</a>
+           </li>
+           <li class="nav-item align-items-center d-flex">
+             <a class="nav-link" href="Blog.html">Blogs</a>
+           </li>
+         </ul>
+       </div>
+       <div class="navbar-nav ml-auto ml-md-0">
+         <div class="d-flex justify-content-center">
+           <a class="nav-link" href="#"><span class="icon-favorite navbar-icon"></span></a>
+           <a class="nav-link" href="Login.html"><span class="icon-user navbar-icon"></span></a>
+         </div>
+       </div>
+     </div>
+   </nav>
+ 
+   <!-- Sidebar -->
+   <div id="overlay" onclick="closeNav()"></div>
+   <div class="sidebar" id="sidebarMobile">
+     <div class="sidebar-content">
+       <div>
+         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><span class="icon-menu-open"></span></a>
+         <a href="Home.html"><span class="icon-home sidebar-icon"></span>Home</a>
+         <div class="dropdown-mobile">
+           <a href="javascript:void(0)" class="dropdown-link"><span class="icon-tour sidebar-icon"></span>Tour</a>
+           <div class="dropdown-mobile-content">
+             <a href="Detail.html">Spring tour</a>
+             <a href="#">Summer tour</a>
+             <a href="#">Autumn tour</a>
+             <a href="#">Winter tour</a>
+           </div>
+         </div>
+         <div class="dropdown-mobile">
+           <a href="javascript:void(0)" class="dropdown-link"><span
+               class="icon-shopping-list sidebar-icon"></span>Planning</a>
+           <div class="dropdown-mobile-content">
+             <a href="Plan.html">Your plan</a>
+             <a href="#">Suggestion</a>
+             <a href="#">Plan a trip</a>
+           </div>
+         </div>
+ 
+         <a href="Mytrip.html"><span class="icon-ticket sidebar-icon"></span>My Trip</a>
+         <a href="Blog.html"><span class="icon-blog sidebar-icon"></span>Blogs</a>
+       </div>
+       <a href="Login.html" class="btn btn-outline-primary primary-button d-flex w-100 signin-btn">
+         <span class="icon-login signin-icon"></span>
+         Sign in</a>
+     </div>
+   </div>
+     <!-- Navbar -->
+
+  <!-- Breakcrum -->
+<nav aria-label="breadcrumb" class="my-3">
+  <div class="container breadcrumb-container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="Home.html"><span class="icon-home breadcrumb-icon"></span></a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Planning
+      </li>
+    </ol>
+  </div>
+</nav>
+   <!-- Title Blog Recommend-->
+   <div class="container title-container">
+    <div class="d-flex title-index">
+      <h2>Planning</h2>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+
+  <!-- BANNER 1 Plan-->
+<div class="container-fluid" id="banner1-Blogdetail">
+    <div class="container banner1">
+      <img src="imgs/imgs-Plan/Banner Plan(1).png" alt="banner1-detail">
+    </div>
+    <div class="container bg-detail">
+        <div class="row ContentDetail ">
+            <div class="col-12">
+                <h1>Detail Tour</h1>
+                <p>Vietravel Airlines round-trip airfare + Standard Room + Breakfast</p>
+                <p>Standard Tour - 1 PM - 1:00 PM</p>
+                <p>Saturday, December 7, 2023 | 1:00 PM</p>
+                <p>2 Adults × $56.05</p>
+            </div>
+        </div>
+    </div>
+    </div> <!-- BANNER Plan-->
+  <!-- Tab -->
+  <div class="container tab">
+    <ul class="tabs">
+      <li class="active-tab">Saves</li>
+      <li>Itinenary</li>
+    </ul>
+    
+    <ul class="tabs-content">
+      <li>0 items</li>
+      <li>Nothing saved yet! When you save an item, you can add it here.</li>
+    </ul>
+  </div>
+  <!-- Popup -->
+  <!-- Button to Open the Modal -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 offset-xl-8 col-lg-5 offset-lg-7 col-md-7 offset-md-6 col-sm-10 offset-sm-4 col-12 offset-1">
+        <button type="button" class="btn btn-primary " id="Reminder" data-toggle="modal" data-target="#myModal">
+          Schedule Reminder
+        </button>
+        <a href="" class="btn btn-primary" id="Create" >Create your own trip</a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content-plan">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title-plan">Edit trip details</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+         <!-- NAME -->
+      <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+          <label> Trip Name</label>
+          <input type="text" name="name" class="form-control" ng-model="user.name" required>
+      </div>
+      <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+        <label> Destination</label>
+        <input type="text" name="name" class="form-control" ng-model="user.name" required placeholder="Your destination">
+    </div>
+    <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+      <label>Time</label>
+      <input type="text" name="name" class="form-control-plan" ng-model="user.name" required placeholder="mm/dd/yyyy">
+  </div>
+
+
+  <!-- For Demo Purpose -->
+
+  <div class="calendar shadow bg-white p-5">
+    <div class="d-flex align-items-center calendarpopup"><i class="fa fa-calendar fa-3x mr-3"></i>
+      <h2 class="month font-weight-bold mb-0 text-uppercase">April 1, 2023</h2>
+    </div>
+    <ol class="day-names list-unstyled">
+      <li class="font-weight-bold text-uppercase">Sun</li>
+      <li class="font-weight-bold text-uppercase">Mon</li>
+      <li class="font-weight-bold text-uppercase">Tue</li>
+      <li class="font-weight-bold text-uppercase">Wed</li>
+      <li class="font-weight-bold text-uppercase">Thu</li>
+      <li class="font-weight-bold text-uppercase">Fri</li>
+      <li class="font-weight-bold text-uppercase">Sat</li>
+      
+    </ol>
+
+    <ol class="days list-unstyled">
+      <li>
+        <div class="date">1</div>
+       
+      </li>
+      <li>
+        <div class="date">2</div>
+      </li>
+      <li>
+        <div class="date">3</div>
+      </li>
+      <li>
+        <div class="date">4</div>
+      </li>
+      <li>
+        <div class="date">5</div>
+      </li>
+      <li>
+        <div class="date">6</div>
+      </li>
+      <li>
+        <div class="date">7</div>
+      </li>
+      <li>
+        <div class="date">8</div>
+      </li>
+      <li>
+        <div class="date">9</div>
+      </li>
+      <li>
+        <div class="date">10</div>
+      </li>
+      <li>
+        <div class="date">11</div>
+      </li>
+      <li>
+        <div class="date">12</div>
+      </li>
+      <li>
+        <div class="date">13</div>
+        
+      </li>
+      <li>
+        <div class="date">14</div>
+      </li>
+      <li>
+        <div class="date">15</div>
+       
+      </li>
+      <li>
+        <div class="date">16</div>
+      </li>
+      <li>
+        <div class="date">17</div>
+      </li>
+      <li>
+        <div class="date">18</div>
+      </li>
+      <li>
+        <div class="date">19</div>
+      </li>
+      <li>
+        <div class="date">20</div>
+      </li>
+      <li>
+        <div class="date">21</div>
+        
+      </li>
+      <li>
+        <div class="date">22</div>
+       
+      </li>
+      <li>
+        <div class="date">23</div>
+      </li>
+      <li>
+        <div class="date">24</div>
+      </li>
+      <li>
+        <div class="date">25</div>
+      </li>
+      <li>
+        <div class="date">26</div>
+      </li>
+      <li>
+        <div class="date">27</div>
+      </li>
+      <li>
+        <div class="date">28</div>
+      </li>
+      <li>
+        <div class="date">29</div>
+      </li>
+      <li>
+        <div class="date">30</div>
+      </li>
+      <li>
+        <div class="date">31</div>
+      </li>
+      <li class="outside">
+        <div class="date">1</div>
+      </li>
+      <li class="outside">
+        <div class="date">2</div>
+      </li>
+      <li class="outside">
+        <div class="date">3</div>
+      </li>
+      <li class="outside">
+        <div class="date">4</div>
+      </li>
+    </ol>
+  </div>
+</div>
+      
+
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger buttoncreate" data-dismiss="modal">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Title Blog Recommend-->
+ <div class="container title-container">
+  <div class="d-flex title-index">
+    <h2>Hot Plan</h2>
+    <div class="underline-title"></div>
+  </div>
+</div>
+<!-- Content Hot Plan -->
+<div class="container ">
+  <div class="row imgHotplan">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
+      <img src="imgs/imgs-Plan/VUNGTAUTOUR(1).png" alt="#" class="img-fluid">
+      <h1 id="location">VUNG TAU TOUR</h1>
+      <span class="icon-calendar iconlich"></span>
+      <span id="contentlocation">Dec 7</span>
+      <span class="icon-location iconlich"></span>
+      <span id="contentlocation">Phu Quoc</span>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
+      <img src="imgs/imgs-Plan/PHUQUOCTOUR(1).png" alt="#" class="img-fluid">
+      <h1 id="location">PHU QUOC TOUR</h1>
+      <span class="icon-calendar iconlich"></span>
+      <span id="contentlocation">Jan 7</span>
+      <span class="icon-location iconlich"></span>
+      <span id="contentlocation">Grandwonder</span>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-lg-block imghotplan">
+      <img src="imgs/imgs-Plan/HUETOUR(1).png" alt="#" class="img-fluid">
+      <h1 id="location">HUE TOUR</h1>
+      <span class="icon-calendar iconlich"></span>
+      <span id="contentlocation">Jun 7</span>
+      <span class="icon-location iconlich"></span>
+      <span id="contentlocation">Thua Thien Hue</span>
+    </div>
+    
+  </div>
+</div>
+ <!-- Button -->
+ <div class="show-all mt-4 d-flex justify-content-center">
+  <button
+    type="button"
+    class="btn btn-outline-primary primary-button d-flex"
+  >
+    Show all
+    <span class="icon-arrowline-right show-all-icon"></span>
+  </button>
+</div>
+ <!-- Title Blog Recommend-->
+ <div class="container title-container">
+  <div class="d-flex title-index">
+    <h2>Suggested By Viatrips</h2>
+    <div class="underline-title"></div>
+  </div>
+</div>
+<!-- Content Hot Plan -->
+<div class="container ">
+  <div class="row imgHotplan">
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
+      <img src="imgs/imgs-Plan/TAYNINHTOUR(1).png" alt="#" class="img-fluid">
+      <h1 id="location">TAY NINH TOUR</h1>
+      <span class="icon-calendar iconlich"></span>
+      <span id="contentlocation">July 8</span>
+      <span class="icon-location iconlich"></span>
+      <span id="contentlocation">Nui Ba Den</span>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 imghotplan">
+      <img src="imgs/imgs-Plan/HOIANTOUR(1).png" alt="#" class="img-fluid">
+      <h1 id="location">HOI AN TOUR</h1>
+      <span class="icon-calendar iconlich"></span>
+      <span id="contentlocation">Jan 24</span>
+      <span class="icon-location iconlich"></span>
+      <span id="contentlocation">Hoi An Village</span>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 d-none d-lg-block imghotplan">
+      <img src="imgs/imgs-Plan/SAPATOUR(1).png" alt="#" class="img-fluid">
+      <h1 id="location">SAPA TOUR</h1>
+      <span class="icon-calendar iconlich"></span>
+      <span id="contentlocation">Dec 7</span>
+      <span class="icon-location iconlich"></span>
+      <span id="contentlocation">Terraces</span>
+    </div>
+  </div>
+</div>
+<!-- Button -->
+<div class="show-all mt-4 d-flex justify-content-center">
+  <button
+    type="button"
+    class="btn btn-outline-primary primary-button d-flex"
+  >
+    Show all
+    <span class="icon-arrowline-right show-all-icon"></span>
+  </button>
+</div>
+  <div class="khoangcach"></div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="d-md-none">
+      <div id="footerCollapse">
+        <div class="card">
+          <div class="card-header" id="AboutViatrips">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#aboutViatrips"
+              aria-expanded="true" aria-controls="aboutViatrips">
+              About Viatrips
+            </button>
+          </div>
+
+          <div id="aboutViatrips" class="collapse" aria-labelledby="AboutViatrips" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="carrer.html">Carrers</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingExplore">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#explore" aria-expanded="true"
+              aria-controls="explore">
+              Explore
+            </button>
+          </div>
+          <div id="explore" class="collapse" aria-labelledby="headingExplore" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Airplane ticket</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Group booking</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInformation">
+            <button class="header-btn collapsed" data-toggle="collapse" data-target="#information" aria-expanded="true"
+              aria-controls="information">
+              Information
+            </button>
+          </div>
+          <div id="information" class="collapse" aria-labelledby="headingInformation" data-parent="#footerCollapse">
+            <div class="card-body">
+              <ul class="footer-link-items">
+                <li><a href="#">Tour booking policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="TermsOfUse.html">Terms of Use</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">About Viatrips</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="carrer.html">Carrers</a></li>
+            <li><a href="AboutUs.html">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Airplane ticket</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Group booking</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-4 col-md-3 col-lg-2 ">
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-link-items">
+            <li><a href="#">Tour booking policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="TermsOfUse.html">Terms of Use</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block col-5 col-md-3 col-lg-2 social-section ">
+          <h4 class="footer-title">Social media</h4>
+          <div class="d-flex">
+            <a href="#"><span class="icon-facebook social-icon"></span></a>
+            <a href="#"><span class="icon-instagram social-icon"></span></a>
+            <a href="#"><span class="icon-youtube social-icon"></span></a>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="icon-discord social-icon"></span></a>
+            <a href="#"><span class="icon-tiktok social-icon"></span></a>
+            <a href="#"><span class="icon-twitter social-icon"></span></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="row">
+            <div class="col-5 d-block d-md-none social-section ">
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-facebook social-icon"></span></a>
+                <a href="#"><span class="icon-instagram social-icon"></span></a>
+                <a href="#"><span class="icon-youtube social-icon"></span></a>
+              </div>
+              <div class="d-flex flex-wrap">
+                <a href="#"><span class="icon-discord social-icon"></span></a>
+                <a href="#"><span class="icon-tiktok social-icon"></span></a>
+                <a href="#"><span class="icon-twitter social-icon"></span></a>
+              </div>
+            </div>
+            <div class="col-7 col-md-6 col-lg-12 ">
+              <h4 class="footer-title">Payment</h4>
+              <div class="d-flex flex-wrap">
+                <img src="imgs/visa.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/paypal.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/applepay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/vnpay.svg" class="payment-icon mb-md-0" />
+                <img src="imgs/samsungpay.svg" class="payment-icon mb-md-0" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 ">
+              <div class="input-group email-address">
+                <input placeholder="Enter Email Address" class="form-control email-input" />
+                <span class="input-group-append right-icon-container">
+                  <button class="btn border-0 text-white send-btn" type="button">
+                    <span class="icon-send send-icon"></span>
+                  </button>
+                </span>
+              </div>
+              <div class="receive-news mt-2">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <span class="checkmark"></span>
+                Yes, i want to receive news and products emails. Please read our
+                <a href="#">privacy policy.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright text-center">
+      Copyright © 2023 Viatrips. All rights reserved.
+    </div>
+  </footer>
+  <!-- Footer -->
+
+
+   <!-- chatbox -->
+   <button class="chatbox-open">
+    <img src="imgs/avatar-viatrips.svg" class="img-fluid">
+  </button>
+  <button class="chatbox-close">
+    <span class="icon-closelight icon-chatbox"></span></button>
+  <section class="chatbox-popup">
+    <header class="chatbox-popup__header">
+      <aside style="flex:2">
+        <img src="imgs/avatar3-viatrips.svg" class="img-fluid">
+      </aside>
+      <aside style="flex:8">
+        <div class="row">
+          <h1 class="chat-box-title mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span class="path1"></span><span
+              class="path2"></span><span class="path3"></span></span>
+        </div>
+        <span class="ml-1">Staff (Online)</span>
+      </aside>
+      <aside style="flex:1">
+        <button class="chatbox-maximize"><span class="icon-select-window  icon-chatbox"></span></button>
+      </aside>
+    </header>
+    <main class="chatbox-popup__main">
+      <h5>15:30</h5>
+          <div id="message-chatbox">
+            <span>Hi there!<br>
+              Welcome to Viatrips's services. Please choose your desired departure point?</span>
+          </div>
+      </div>
+    </main>
+    <footer class="chatbox-popup__footer">
+
+      <aside style="flex:20">
+        <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+      </aside>
+      <aside style="flex:1;color:#888;text-align:center;">
+        <span class="icon-send icon-chatbox" style="color:#4340D8"></span>
+      </aside>
+    </footer>
+  </section>
+  <section class="chatbox-panel">
+    <header class="chatbox-panel__header">
+      <aside style="flex:2">
+        <img src="imgs/avatar2-viatrips.svg" class="img-fluid">
+      </aside>
+      <aside style="flex:6">
+        <div class="row">
+          <h1 class="chat-box-title mr-2 ml-3">Viatrips</h1> <span class="icon-tick tickxanh"><span class="path1"></span><span
+              class="path2"></span><span class="path3"></span></span>
+        </div>
+        <span class="ml-1">Staff (Online)</span>
+      </aside>
+      <aside style="flex:3;text-align:right;">
+        <button class="chatbox-minimize"><span class="icon-select-window icon-chatbox"></span></button>
+        <button class="chatbox-panel-close"><span class="icon-closelight icon-chatbox"></span></button>
+      </aside>
+    </header>
+    <main class="chatbox-panel__main" style="flex:1">
+      <h5>15:30</h5>
+      <div id="message-chatbox">
+        <span>Hi there!<br>
+          Welcome to Viatrips's services. Please choose your desired departure point?</span>
+      </div>
+
+    <div id="message-btn-box">
+      <button class="btn primary-button" id="message-btn">The North</button>
+      <button class="btn primary-button" id="message-btn">The Central</button>
+      <button class="btn primary-button" id="message-btn">The South</button>
+  </div>
+    </main>
+    <footer class="chatbox-panel__footer">
+
+      <aside style="flex:15">
+        <textarea type="text" placeholder="Type your message here..." autofocus></textarea>
+      </aside>
+      <aside style="flex:1;color:#888;text-align:center;">
+        <span class="icon-send icon-chatbox" style="color: #4340D8;"></span>
+      </aside>
+    </footer>
+  </section> <!-- chatbox -->
+
+
+  <!-- js chatbox -->
+  <script>
+    $(".chatbox-open").click(() =>
+      $(".chatbox-popup, .chatbox-close").fadeIn()
+    );
+
+    $(".chatbox-close").click(() =>
+      $(".chatbox-popup, .chatbox-close").fadeOut()
+    );
+
+    $(".chatbox-maximize").click(() => {
+      $(".chatbox-popup, .chatbox-open, .chatbox-close").fadeOut();
+      $(".chatbox-panel").fadeIn();
+      $(".chatbox-panel").css({ display: "flex" });
+    });
+
+    $(".chatbox-minimize").click(() => {
+      $(".chatbox-panel").fadeOut();
+      $(".chatbox-popup, .chatbox-open, .chatbox-close").fadeIn();
+    });
+
+    $(".chatbox-panel-close").click(() => {
+      $(".chatbox-panel").fadeOut();
+      $(".chatbox-open").fadeIn();
+    });
+  </script> <!-- js chatbox -->
+
+
+<!-- js top btn -->
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $("#scroll-to-top").fadeIn();
+    } else {
+      $("#scroll-to-top").fadeOut();
+    }
+  });
+
+  $("#scroll-to-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+  });
+</script> <!-- js top btn -->
+
+  
+</body>
+
+</html>
